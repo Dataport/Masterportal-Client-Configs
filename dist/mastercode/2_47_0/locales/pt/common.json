@@ -1,0 +1,835 @@
+{
+    "masterPortalVersion": "Masterportal V. {{masterPortalVersionNumber}}",
+    "button": {
+        "back": "Voltar",
+        "download": "Descarregar",
+        "search": "Pesquisar",
+        "close": "Fechar",
+        "minimize": "Minimizar"
+    },
+    "colors": {
+        "blue": "Azul",
+        "yellow": "Amarelo",
+        "grey": "Cinzento",
+        "green": "Verde",
+        "orange": "Cor de laranja",
+        "red": "Vermelho",
+        "black": "Preto",
+        "white": "Branco"
+    },
+    "menu": {
+        "topics": "Temas",
+        "views": {
+            "name": "Visualizações",
+            "view01": "1˚ visual"
+        },
+        "wayToSchool": "Rota escolar",
+        "filter": "Filtros",
+        "tools": {
+            "name": "Ferramentas",
+            "compareFeatures": "Lista de comparação",
+            "parcelSearch": "Pesquisa de parcelas",
+            "print": "Imprimir mapa",
+            "measure": "Mediação distância / área",
+            "coord": "Consultar coordenadas",
+            "supplyCoord": "Consultar coordenadas",
+            "searchByCoord": "Pesquisar coordenadas",
+            "fileImport": "Carregar ficheiro",
+            "modeler3D": "Modelador 3D",
+            "routing": "Direções",
+            "draw": "Desenhar / Escrever",
+            "shadow": "Sombra",
+            "commuterLines": "Mobilidade pendular (linhas)",
+            "commuterAnimation": "Mobilidade pendular (animação)",
+            "layerSlider": "Série temporal",
+            "featureLister": "Lista",
+            "saveSelection": "Aplicar seleção",
+            "getInfos": "Saber mais",
+            "addWms": "Adicionar Serviço WMS",
+            "wfsTransaction": "WFS-T Tool",
+            "scaleSwitcher": "Modificar escala",
+            "selectFeatures": "Selecione recursos"
+        },
+        "contact": "Contacto",
+        "info": "Informações"
+    },
+    "tree": {
+        "trafficCameras": "Câmaras de trânsito",
+        "topicsHelp": "Ajuda Tabela de Conteúdos",
+        "mapBackground": "Mapa de fundo cinzento/branco",
+        "pinTopicsTree": "Tabela de Conteúdos afixar/desafixar",
+        "hideAllTopics": "Remover todos os temas",
+        "showAllTopics": "Visualizar todos os temas",
+        "category": "Categoria",
+        "backgroundMaps": "Mapas de fundo",
+        "subjectData": "Dados temáticos",
+        "subjectData3D": "Dados 3D",
+        "selectedTopics": "Temas selecionados",
+        "removeSelection": "Remover seleção",
+        "infosAndLegend": "Informação e legenda",
+        "removeTopic": "Remover tema",
+        "showTopic": "Visualizar tema",
+        "changeClassDivision": "Modificar divisão de classes",
+        "settings": "Configurações",
+        "transparency": "Transparência",
+        "increaseTransparency": "Aumentar transparência",
+        "reduceTransparency": "Diminuir transparência",
+        "removeLayer": "Remover camada",
+        "levelUp": "Mover camada para cima",
+        "levelDown": "Mover camada para baixo",
+        "externalTechnicalData": "Dados temáticos externos"
+    },
+    "date": "Data",
+    "time": "Horário",
+    "modules": {
+        "core": {
+            "modelList": {
+                "layer": {
+                    "wrongStyleId": "Nenhum objecto de estilo pôde ser encontrado sob a StyleId: {{styleId}} especificada. Por favor, certifique-se de que um estilo com o StyleId: {{styleId}} é configurado no Style.json utilizado.",
+                    "sensor": {
+                        "httpOnError": "<strong>Ocorreu um erro inesperado ao carregar os dados do sensor da camada {{name}}</strong>"
+                    }
+                }
+            },
+            "parametricURL": {
+                "alertWrongLayerIds": "<strong>A chamada parametrizada está avariada!</strong></br>O <b>layerIds</b> nas posições: {{wrongIdsPositionsConcat}} não existem e são ignorados!"
+            }
+        },
+        "alerting": {
+            "hideMessage": "Não mostrar esta mensagem de novo",
+            "categories": {
+                "error": "Erro",
+                "info": "Saber mais",
+                "success": "Sucesso",
+                "warning": "Atenção"
+            }
+        },
+        "confirmAction": {
+            "defaultHeadline": "Confirmar",
+            "defaultCopy": "Por favor confirmar.",
+            "defaultConfirmCaption": "OK",
+            "defaultDenyCaption": "Cancelar"
+        },
+        "language": {
+            "languageTitle": "Por favor selecione um idioma",
+            "de": "Deutsch",
+            "en": "English",
+            "es": "Español",
+            "it": "Italiano",
+            "platt": "Platt",
+            "pt": "Português",
+            "ru": "Русский",
+            "tr": "Türkçe",
+            "ua": "Українська"
+        },
+        "cswParser": {
+            "noMetadataMessage": "Metadados não estão disponíveis.",
+            "continual": "continuamente",
+            "daily": "diariamente",
+            "weekly": "semanalmente",
+            "fortnightly": "quinzenalmente",
+            "monthly": "mensalmente",
+            "quarterly": "trimestralmente",
+            "biannually": "semestral",
+            "annually": "anualmente",
+            "asNeeded": "quando necessário",
+            "irregular": "irregular",
+            "notPlanned": "não planejado",
+            "unknown": "desconhecido"
+        },
+        "layerInformation": {
+            "additionalMetadata": "Metadados adicionais",
+            "addressSuffix": "Endereço",
+            "multiAddress": "Endereços de serviço",
+            "attachFileMessage": "ao descarregar pode se necessário anexar o tipo de ficheiro",
+            "closeButton": "Fechar",
+            "downloadDataset": "Descarregar conjunto de dados",
+            "errorMessage": "A consulta dos metadados falhou. Se o problema persistir, entre em contato com o proptirtário do serviço: <b>{{cswObjCswUrl}}</b>",
+            "informationAndLegend": "Informações e legenda",
+            "lastModified": "Última alteração",
+            "legend": "Legenda",
+            "noMetadataLoaded": "Não foi possivel carregar os metadados!",
+            "noMetadataMessage": "$t(modules.cswParser.noMetadataMessage)",
+            "periodicityTitle": "Periodicidade",
+            "publicationCreation": "Publicação / Produção",
+            "buildings": "Edifício"
+        },
+        "mapMarker": {
+            "nostyleObject": "Zu der angegebenen StyleId: {{styleId}} konnte keine Style gefunden werden. Bitte überprüfen sie ihre Konfiguration."
+        },
+        "featureViaURL": {
+            "coordLabel": "Coordenadas",
+            "featureLabel": "Descrição",
+            "folderName": "Função transmitida pelo URL",
+            "typeLabel": "Tipo de geometria",
+            "messages": {
+                "featureParsing": "FeatureViaURL:  Não foi possível transferir todas as funções.",
+                "featureParsingAll": "FeatureViaURL: Todas funções não foram enviadas com o tipo de dados corretos. Note por favor a documentação.",
+                "featureParsingNoneAdded": "FeatureViaURL: Todas funcões necessitam pelo menos um parâmetro. Nenhumas funções foram adicionadas ao mapa. Note por favor a documentação.",
+                "geometryNotSupported": "FeatureViaURL: O tipo de geometria {{geometryType}} na configuração da camada {{layerId}} não é suportado.",
+                "layerNotFound": "FeatureViaURL: A camada com o ID {{layerId}} não foi encontrado.",
+                "noLayers": "FeatureViaURL: Para as funções não existem camadas definidas na configuração.",
+                "noNameDefined": "FeatureViaURL: O nome da camada com o ID {{layerId}} não foi definido nas configurações.",
+                "defaultTreeNotSupported": "FeatureViaURL só é compatível com Treetype custom ou light."
+            }
+        },
+        "quickHelp": {
+            "titleTag": "Abrir/fechar ajuda",
+            "search": {
+                "title": "Ajuda - Pesquisa",
+                "generalInfo": "Geral",
+                "addressSearch": "Busca de endereços",
+                "houseNumberSearch": "Pesquisa em uma estrada todos números das casas",
+                "topicsSearch": "Pesquisa por tema / dados geográficos",
+                "parcelSearch": "Pesquisa de parcelas",
+                "generalInfoHelp1": "Para receber sugestões, é necessario introduzir na barra de pesquisa pelo menos três letras <strong>(1)</strong>. Aleatoriamente serão apresentados no máximo cinco sugestões <strong>(2)</strong>. Um ícone <strong>(3)</strong> antes e uma descrição depois do acerto mostram o tipo de categoria.",
+                "generalInfoHelp2": "Ao clicar na lupa <strong>(1)</strong> ou por pressionar na tecla Enter/Return os resultados são apresentados numa lista classificada incluindo o número dos acertos por categoria <strong>(2)</strong>. Um outro clique numa das categorias mostra os respectivos acertos <strong>(3)</strong>.",
+                "addressHelp": "Introduza o endereço que procura na barra de pesquisa. Ao pressionar a tecla Enter/Return ou a lupa, ou ao clicar no endereço da lista de sugestões, o mapa amplia para o endereço que procura. Além disso, a posição exacta do endereço é indicada por um ícone no mapa.",
+                "houseNumberHelp": "Introduza a rua correspondente na barra de pesquisa. Assim que a pesquisa de endereços encontre apenas uma rua como resultado, a pesquisa do número da casa é automaticamente executada e a lista de sugestões enche-se com endereços. Ao pressionar a tecla Enter/Return ou a lupa, são listados todos os números das casas da rua.",
+                "topicsHelp": "Com a pesquisa temática pode introduzir termos de pesquisa (p. ex. áreas protegidas, eleições, habitação, etc.) e pesquisar os geodados disponíveis sobre esta Tabela de Conteúdos. Quando se selecciona um resultado, este é apresentado directamente no mapa.",
+                "parcelHelp": "Pode procurar as parcelas usando o número da parcela e o número do conjunto de parcelas. Basta introduzir na barra de busca o número do conjunto de parcelas seguido do número da parcela <strong>(1)</strong> (com ou sem espaços) e premir a tecla Enter/Return ou a lupa. O mapa é então centrado na parcela que procura <strong>(2)</strong>."
+            },
+            "measureTool": {
+                "title": "Ajuda - Medir distância/árean",
+                "statisticalApprox": "Aproximação estatística",
+                "equalizationUTM": "Rectificação em UTM",
+                "conversionInMap": "Conversões no mapa",
+                "influenceFactors": "Os valores apresentados estão sujeitos a imprecisões que são influenciadas pelos seguintes factores, entre outros:",
+                "scale": "Escala",
+                "resolution": "Resolução do mapa",
+                "screenResolution": "Resolução do ecrã",
+                "inputAccuracy": "Precisão de entrada e número de pontos digitalizados e",
+                "measureDistance": "Distância da linha de medição ou tamanho da área de medição",
+                "standardDeviation": "Uma vez que os tamanhos de erro acima indicados podem variar de estação de trabalho para estação de trabalho, é assumido um desvio padrão de 1mm por clique no mapa. Isto resulta num erro de ponto dependente da escala de cada ponto de medição no mapa:",
+                "spotDefects": "Erro de ponto [m]",
+                "errorPropagationLaw": "De acordo com a lei de propagação de erros de coordenadas sem consideração de correlações e desvio padrão uniforme de acordo com a fórmula do triângulo gaussiano, aplica-se o seguinte:",
+                "forDistances": "Para distâncias:",
+                "forAreas": "Para áreas:",
+                "errorReason": "Assim, o erro depende do desvio padrão do erro único, da escala e do número de pontos.",
+                "example": "Exemplo:",
+                "exampleContent": "Para um polígono quadrado com 10m de comprimento lateral (área: 100 m²), uma escala de 1:1000 resulta num erro esperado de 10,00 m². Este erro resulta de medições inexactas por parte do utilizador no ecrã.",
+                "UTMHelp1": "O sistema de coordenadas UTM é um sistema global de coordenadas que representa a superfície da terra em bandas de 6° de largura. Cada faixa representa uma zona, que são numeradas consecutivamente de 180° oeste a 180° este. A Alemanha está localizada principalmente na zona 32 (6° a 12° de longitude leste). Uma projecção transversal de Mercator é utilizada para projectar a superfície curva da terra sobre um mapa plano. Aqui, o cilindro de projecção (<font color=\"red\">vermelho</font>) intersecta a superfície da Terra, criando uma faixa de corte de 360 km de largura que salta \"sobre\" o cilindro de projecção. As coordenadas da faixa cortada são consequentemente encurtadas no plano de imagem, enquanto as coordenadas fora da faixa cortada são esticadas.",
+                "UTM6": "Imagem UTM de 6° de largura",
+                "imageDistortion1": "Distorção da imagem UTM",
+                "imageDistortion2": "Esta distorção deve ser combatida, uma vez que as distâncias/áreas medidas são distorcidas e, portanto, incorrectas quando medidas directamente no mapa. Para Hamburgo, por exemplo, a distorção já atinge cerca de 40cm para uma medição de distância de 1000m. Este é um erro não insignificante, que está muito para além das tolerâncias dos instrumentos de medição actuais. Com a ajuda das seguintes fórmulas, as distâncias e áreas medidas podem ser novamente equalizadas:",
+                "formulas": "Fórmulas para a rectificação de áreas/distâncias medidas em UTM",
+                "useInMapHelp": "O erro absoluto máximo a esperar é exibido atrás da área/distância medida e marcado por um símbolo de mais/menos (\"+/-\"). Isto significa que o valor real se afasta do valor medido por um máximo do erro absoluto. O erro absoluto apresentado é, portanto, a inexactidão da área/distância medida. Nesta aplicação, as áreas/distâncias medidas são imediatamente rectificadas para que a medida exibida corresponda à \"verdadeira\" área/distância na superfície da terra. Não é necessário calcular mais rectificações."
+            },
+            "topicTree": {
+                "title": "Ajuda - Tabela de Conteúdos",
+                "topics": "Como a Tabela de Conteúdos está estruturada sob dados temáticos?",
+                "selection": "O que é a selecção?",
+                "saveSelection": "Guardar a selecção",
+                "topicsHelp1": "A Tabela de Conteúdos está dividida em mapas de fundo, um catálogo de dados do assunto e a actual selecção de camadas de mapas.",
+                "topicsHelp2": "O \"FHH-Atlas\" mostra todas as camadas do mapa às quais é atribuído um registo de dados no Catálogo de Metadados de Hamburgo (HMDK). O Gabinete do Estado para a Geoinformação e Cadastro (LGV) faz a tarefa de acordo com as referências no HMDK. Em caso de dúvida, é feito um acordo com os detentores dos dados do sujeito. Os conjuntos de dados atribuídos às camadas do mapa controlam a estrutura automatizada na Tabela de Conteúdos no \"FHH-Atlas\":<br/><br/>As categorias superiores na Tabela de Conteúdos resultam das categorias dos Dados Abertos (por exemplo, população, saúde) que foram atribuídas aos conjuntos de dados no HMDK (ver figura abaixo). Cada conjunto de dados aparece na 'sua' categoria. Actualmente, para seleccionar uma categoria de Dados Abertos, o conjunto de dados deve também ser publicado como Dados Abertos. Esta restrição técnica será levantada em breve através de um novo desenvolvimento da interface de introdução de dados na HMDK. A selecção de uma categoria de Dados Abertos pode então ser feita independentemente da publicação como Dados Abertos. Se nenhuma categoria for atribuída a um conjunto de dados, esse será exibido na Tabela de Conteúdos sob Outros.<br/>Escolhemos as categorias dos Dados Abertos porque os dados no portal de transparência são também classificados de acordo com estas categorias e muitos conjuntos de dados já estão classificados em conformidade.<br/>Alternativamente, a Tabela de Conteúdos também pode ser estruturada de acordo com as categorias INSPIRE.",
+                "topicsHelp3": "A camada abaixo das categorias superiores representa um conjunto de dados do HMDK. Se várias camadas do mapa forem atribuídas a um conjunto de dados, é criada uma pasta. A pasta é nomeada como o conjunto de dados no HMDK (por exemplo, pontos de contagem de tráfego em Hamburgo, ver imagem abaixo). Dentro da pasta, encontrará as camadas de mapa individuais que são atribuídas ao conjunto de dados (por exemplo, ponto de contagem, ver imagem abaixo). (Para peritos: as camadas do mapa são normalmente nomeadas como são chamadas no serviço de mapa associado, ou seja, como foram nomeadas no documento de mapa subjacente).<br/> Se for atribuída exactamente uma camada de mapa a um conjunto de dados, é criada uma entrada simples na Tabela de Conteúdos. A entrada simples é também denominada como o conjunto de dados no HMDK (por exemplo, obras rodoviárias actuais, ver imagem abaixo).<br/> Para cada camada, o botão i (<span class=\"{{iconCls}}\"></span>) pode assim ser utilizado para chamar os metadados associados aos conjuntos de dados.",
+                "topicsHelp4": "A Tabela de Conteúdos é gerada e actualizada diariamente com base nas informações do HMDK. Assim, se o 'seu' conjunto de dados não aparecer na categoria correcta, pode alterá-lo você mesmo. Basta ajustar a categoria OpenData (Dados Abertos) na entrada HMDK associada e, no dia seguinte, o conjunto de dados aparecerá na categoria correcta no \"FHH-Atlas\". Se as camadas do mapa atribuídas ao 'seu' conjunto de dados não estiverem correctas, por favor contacte-nos por email (GVGeoportal@gv.hamburg.de).<br/><br/>Pedimos-lhe que verifique a exactidão das categorias. Se forem atribuídas múltiplas categorias a um registo no HMDK, o registo aparecerá várias vezes na Tabela de Conteúdos. Por razões de clareza, recomendamos que se atribua apenas uma categoria por registo.",
+                "topicsHelp5": "As camadas do mapa seleccionadas na Tabela de Conteúdos são apresentadas na selecção. Nas definições (<span class=\"{{iconCls}}\"></span>) de cada camada do mapa, a sua ordem de visualização e transparência podem ser definidas. Naturalmente, a camada pode ser tornada visível, invisível e removida da selecção. A selecção mostra também se uma camada do mapa não pode ser exibida à escala actual. A entrada é então acinzentada.",
+                "topicsHelp6": "Através do botão \"Guardar selecção\" no separador Selecção de tópicos, aparece uma pequena janela popup com um URL. Os tópicos seleccionados e a secção do mapa actual são guardados neste URL. Se o \"FHH-Atlas\" for aberto através deste URL, os tópicos previamente seleccionados são automaticamente incluídos na selecção. Além disso, o mapa faz zoom na secção do mapa armazenada no URL. Para assegurar que o \"FHH-Atlas\" abre sempre com esta selecção de tópicos, este URL pode ser guardado como um marcador de página."
+            }
+        },
+        "footer": {
+            "designation": "Cartografia e desenho:",
+            "mapDiscrepancy": "Inconsistências no mapa"
+        },
+        "tools": {
+            "info": {
+                "disclaimer": "Declaração de exoneração de responsabilidade",
+                "home": {
+                    "name": "Hamburg",
+                    "url": "https://www.hamburg.de/"
+                }
+            },
+            "addWMS": {
+                "completeMessage": "As camadas do WMS solicitado foram adicionadas à Tabela de Conteúdos sob o item de menu <strong>dados externos</strong>!",
+                "error": "Infelizmente não foi possível encontrar WMS (válido) sob o URL dado!",
+                "errorMessage": " serviço especificado não pôde ser carregado. Por favor, certifique-se de que o URL foi especificado correctamente.<br><br> FSe o problema ainda ocorrer, por favor contacte o operador do serviço com a seguinte nota:<br><strong>Deve-se assegurar que um cabeçalho CORS é definido para o serviço. Isto é recomendado pelo <a target='_blank' href='https://www.gdi-de.org/SharedDocs/Downloads/DE/GDI-DE/Dokumente/Architektur_GDI-DE_Bereitstellung_Darstellungsdienste.pdf?__blob=publicationFile'>GDI-DE</a> no capítulo 4.7.1.</strong>",
+                "errorHttpsMessage": "O WMS que solicitou está localizado sob uma http url. O \"Masterportal\" só pode integrar WMS através de https (SSL).",
+                "placeholder": "Por favor introduza aqui o URL do WMS.",
+                "textLoadLayer": "Carregar camada",
+                "ifInExtent": "Os geodados fornecidos através do WMS estão fora da área de exposição. Adicionar WMS não é possível.",
+                "checkVersion": "Adicionar WMS só é possível se camada externa do WMS for igual ou superior a versão 1.3.0."
+            },
+            "contact": {
+                "textPlaceholder": "Formule aqui a sua pergunta e pressione &quot;$t(common:modules.tools.contact.textSendButton)&quot;",
+                "userNamePlaceholder": "Seu nome",
+                "textSendButton": "Submeter",
+                "emailAddressPlaceholder": "Seu endereço de email",
+                "telephonePlaceholder": "Seu número de telefone",
+                "errorName": "Por favor, indique o seu nome.",
+                "errorEmail": "Por favor, introduza um endereço de email válido.",
+                "errorNumber": "Sob que número de telefone podemos contactá-lo?",
+                "errorMessage": "A transmissão de email falhou!",
+                "successMessage": "O seu pedido foi enviado com sucesso",
+                "successTicket": "O número do seu bilhete é: "
+            },
+            "print": {
+                "titleLabel": "Título",
+                "titlePlaceholder": "Meu Título",
+                "layoutLabel": "Layout",
+                "formatLabel": "Formato",
+                "dpiLabel": "DPI",
+                "scaleLabel": "Escala de impressão",
+                "withLegendLabel": "Com Legenda",
+                "printLabel": "Imprimir",
+                "withInfoLabel": "Com Informações",
+                "vtlWarning": "Uma vez que o MapFish 3 não suporta camadas \"Vector Tile Layer\", as seguintes camadas activas não aparecerão na vista de impressão:",
+                "layoutNameList": {
+                    "A4 Hochformat": "Formato A4 Retrato",
+                    "A4 Querformat": "Formato A4 Paisagem",
+                    "A3 Hochformat": "Formato A3 Retrato",
+                    "A3 Querformat": "Formato A3 Paisagem"
+                },
+                "hintInfoScale": "A escala de impressão seleccionada difere da escala na janela do mapa. Isto pode levar a uma alteração do layout do mapa na impressão.",
+                "invisibleLayer": "Os seguintes tópicos não podem ser impressos na escala de impressão {{scale}} seleccionada:"
+            },
+            "shadow": {
+                "shadowDisplay": "Exibição de sombras"
+            },
+            "styleVT": {
+                "introText": "Vários estilos predefinidos podem ser aplicados a \"Vector Tile Layer\" para optimizar a vista para o fim específico.",
+                "noStyleableLayers": "Não há actualmente tópicos disponíveis aos quais esta ferramenta possa ser aplicada.",
+                "theme": "Tópico",
+                "chooseTheme": "Por favor seleccione o tópico activo",
+                "style": "Estilo"
+            },
+            "featureLister": {
+                "chooseTheme": "Escolha o tópico",
+                "visibleVectorLayers": "Camadas vectoriais visíveis",
+                "list": "Lista",
+                "details": "Detalhes",
+                "more": "Mais...",
+                "detailsOfSelected": "Detalhes da característica seleccionada",
+                "alert": "A tentativa de mostrar a característica seleccionada falhou porque não tem geometria.",
+                "key": "{{shownFeatures}} von {{featureCount}} Features gelistet"
+            },
+            "layerSlider": {
+                "displayLayers": "Visualização de várias camadas.",
+                "title": "Simulação de um exemplo WMS",
+                "titleNotConfigured": "Título não configurado",
+                "serviceOne": "Serviço 1",
+                "serviceTwo": "Serviço 2",
+                "serviceThree": "Serviço 3",
+                "serviceFour": "Serviço 4"
+            },
+            "pendler": {
+                "animation": {
+                    "domicile": "Residência",
+                    "workplace": "Local de trabalho",
+                    "chooseDistrict": "Concelho / Cidade sem concelho",
+                    "chooseBorough": "Associação comunitária",
+                    "relationshipsToDisplay": "Número de relações a serem exibidas",
+                    "deleteGeometries": "Apagar geometrias",
+                    "noCommutersKnown": "Não se conhecem pendulares!",
+                    "people": "Pessoas",
+                    "csvDownload": "CSV Descarregar",
+                    "start": "Início",
+                    "reset": "Reinicializar",
+                    "top5": "Top 5",
+                    "top10": "Top 10",
+                    "top15": "Top 15"
+                },
+                "lines": {
+                    "domicile": "Residência",
+                    "workplace": "Local de trabalho",
+                    "chooseDistrict": "Concelho / Cidade sem concelho",
+                    "chooseBorough": "Associação comunitária",
+                    "relationshipsToDisplay": "Número de relações a serem exibidas",
+                    "deleteGeometries": "Apagar geometrias",
+                    "noCommutersKnown": "Não se conhecem pendulares!",
+                    "people": "Pessoas",
+                    "csvDownload": "CSV Descarregar",
+                    "top5": "Top 5",
+                    "top10": "Top 10",
+                    "top15": "Top 15"
+                },
+                "general": {
+                    "attributionText": "<b>Os dados não podem ser utilizados para fins comerciais.</b><br>Fonte: Agência Federal de Emprego - <a href='https://statistik.arbeitsagentur.de/' target='_blank'>https://statistik.arbeitsagentur.de/</a>",
+                    "csvDownloadConfirm": "Os dados não podem ser utilizados para fins comerciais.\r\nFonte: Agência Federal de Emprego - https://statistik.arbeitsagentur.de/"
+                }
+            },
+            "compareFeatures": {
+                "title": "Lista comparativa",
+                "topicsSelection": "Selecção de tópicos",
+                "moreInfo": "Mais informação",
+                "lessInfo": "Menos informação",
+                "exportAsPdf": "Exportar como PDF",
+                "noFeatures": {
+                    "nothingSelected": "Nenhum {{objects}} é seleccionado para a lista de comparação.",
+                    "objectName": "Objectos",
+                    "info": "Clique sobre um objecto no mapa. Abre-se uma janela com a respectiva informação factual. No canto superior direito há um símbolo de estrela {{{iconEmptyStar}}. Clique neste ícone para adicionar o objecto à lista de comparação. O ícone fica amarelo {{iconYellowStar}}. Ao clicar novamente no símbolo da estrela, o objecto é removido da lista de comparação."
+                },
+                "feedback": {
+                    "added": "{{object}} foi adicionado à lista de comparação",
+                    "notAdded": "{{object}} não pôde ser adicionado à lista de comparação",
+                    "limitReached": "O número máximo de objectos na lista de comparação foi atingido.",
+                    "removeObjects": "Por favor, remova pelo menos um objecto antes de prosseguir.",
+                    "gotoComparisonlist": "Para a lista de comparação"
+                }
+            },
+            "saveSelection": {
+                "saveSelectionText": "Guardar este URL como um marcador de página",
+                "contentSaved": "O conteúdo foi copiado para a cache.",
+                "contenNotSaved": "O conteúdo não podia ser copiado para a cache."
+            },
+            "fileImport": {
+                "captions": {
+                    "introFormats": "Podem ser importados ficheiros KML (*.kml), ficheiros GPX (*.gpx) ou ficheiros GeoJson (*.geojson, *.json).",
+                    "introDrawTool": "As geometrias importadas podem ser alteradas posteriormente. Para tal, utilize a ferramenta &quot;$t(common:menu.tools.draw)&quot;.",
+                    "drawTool": "$t(common:menu.tools.draw) abrir",
+                    "supportedFiletypes": {
+                        "auto": "Reconhecimento automático",
+                        "kml": "Ficheiro KML (*.kml)",
+                        "gpx": "Ficheiro GPX (*.gpx)",
+                        "geojson": "Ficheiro GeoJson (*.geojson, *.json)"
+                    }
+                },
+                "alertingMessages": {
+                    "success": "O ficheiro \"{{filename}}\" foi importado com sucesso.",
+                    "successPartly": "O ficheiro \"{{filename}}\" foi parcialmente importado.",
+                    "formatError": "O ficheiro \"{{filename}}\" não pôde ser lido. Por favor, verifique se o ficheiro tem o formato *.kml. *.gpx, *.geojson oder *.json.",
+                    "missingFileContent": "Erro de leitura do ficheiro \"{{filename}}\". Por favor verifique o tipo de ficheiro, bem como o seu conteúdo. Se o ficheiro estiver livre de erros, por favor contacte o apoio ao cliente.",
+                    "missingFormat": "O formato {{format}} do ficheiro não é suportado. Por favor contacte o apoio ao cliente.",
+                    "featureError": "Uma característica deste ficheiro não pôde ser lida."
+                },
+                "successfullyImportedLabel": "Importado com sucesso:",
+                "title": "Importar ficheiro"
+            },
+            "modeler3D": {
+                "entity": {
+                    "captions": {
+                        "backToList": "Voltar para Lista",
+                        "delete": "Apagar Modelo",
+                        "deletionTitle": "Apagar Modelo 3D \"{{name}}\"",
+                        "dimensionsModel": "Mostrar dimensões do modelo 3D \"{{name}}\"",
+                        "copyTitle": "Copiar Modelo 3D \"{{name}}\"",
+                        "editInfo": "Modificar os atributos do modelo selecionado.",
+                        "editModel": "Editar Modelo 3D \"{{name}}\"",
+                        "incrementTooltip": "Mantenha a tecla Shift pressionada para aumentar o valor de forma mais grosseira.",
+                        "modelName": "Nome do Modelo",
+                        "pickupPlace": "Duplo clique em um objeto importado para pegá-lo ou posicioná-lo.",
+                        "projectionInfo": "Atenção! Ao usar o sistema de coordenadas WGS84, podem ocorrer imprecisões. Recomendamos o uso da notação decimal.",
+                        "rotationPlaceholder": "Passos de incremento/decremento",
+                        "rotation": "Rotação",
+                        "rotationSwitch": "Passos de rotação",
+                        "scale": "Escala",
+                        "steps": "Passos",
+                        "visibilityTitle": "Mostrar/Ocultar Modelo 3D \"{{name}}\"",
+                        "zoomTo": "Zoom para o Modelo 3D \"{{name}}\""
+                    },
+                    "deleteInteraction": {
+                        "confirm": "Apagar",
+                        "headline": "Atenção",
+                        "text": "Tem certeza de que deseja apagar o modelo \"{{name}}\"?"
+                    },
+                    "projections": {
+                        "adaptToHeight": "Adaptar ao Terreno",
+                        "cartesian": {
+                            "eastingLabel": "Leste",
+                            "northingLabel": "Norte"
+                        },
+                        "hdms": {
+                            "eastingLabel": "Longitude",
+                            "northingLabel": "Latitude"
+                        },
+                        "height": "Altura",
+                        "projection": "Sistema de Coordenadas"
+                    }
+                },
+                "import": {
+                    "alertingMessages": {
+                        "featureError": "Uma feature neste arquivo não pôde ser lida.",
+                        "fileSizeError": "O tamanho do arquivo excede o limite de 100 MB.",
+                        "formatError": "O arquivo \"{{filename}}\" não pôde ser lido. Por favor, verifique se o arquivo possui o formato *.gltf, *.obj, *.dae ou *.geojson.",
+                        "missingFileContent": "Erro ao ler o arquivo \"{{filename}}\". Por favor, verifique o tipo de arquivo e o conteúdo. Se o arquivo estiver sem erros, por favor, entre em contato com o suporte.",
+                        "missingFormat": "O formato do arquivo \"{{format}}\" não é suportado. Por favor, entre em contato com o suporte.",
+                        "success": "O arquivo \"{{filename}}\" foi importado com sucesso.",
+                        "successPartly": "O arquivo \"{{filename}}\" foi importado parcialmente."
+                    },
+                    "captions": {
+                        "introInfo": "Com o importador, você pode carregar, visualizar e analisar projetos de planejamento urbano digital no modelo 3D existente da cidade.",
+                        "introInfo2": "Importe o arquivo desejado simplesmente arrastando e soltando ou usando a caixa de diálogo de abertura do navegador.",
+                        "introFormats": "Você pode importar arquivos glTF (*.gltf), OBJ (*.obj), Collada (*.dae) ou GeoJSON.",
+                        "successfullyImportedLabel": "Modelos 3D Importados:"
+                    }
+                },
+                "draw": {
+                    "captions": {
+                        "beginModelling": "Modelar Objeto 3D",
+                        "clampToGround": "Alinhar ao Modelo de Terreno",
+                        "color": "Cor",
+                        "controlInfo": "Clique com o botão esquerdo do mouse para definir pontos. Utilize o botão direito do rato ou um duplo clique para terminar o desenho.",
+                        "drawing": "Desenho",
+                        "drawName": "Nome",
+                        "drawnModels": "Modelos Desenhados:",
+                        "export": "Exportar",
+                        "exportTitle": "Exportar todos os modelos desenhados para o formato GeoJSON.",
+                        "extrudedHeight": "Altura Extrudida",
+                        "fillColor": "Cor de Preenchimento",
+                        "geometry": "Geometria",
+                        "introInfo": "Com esta função, você pode desenhar objetos 3D no mapa e modificá-los e projetá-los de forma individual. Você pode esboçar edifícios e, em seguida, por exemplo, realizar simulações de sombra.<br><br>A ferramenta também permite desenhar em edifícios existentes e objetos importados. Um pré-requisito é que você tenha ativado a altura do terreno.<br><br>Usando a função de exportação, você pode exportar seus projetos e carregá-los de volta na aplicação posteriormente usando o importador.",
+                        "outlineColor": "Cor da Contorno",
+                        "transparency": "Transparência",
+                        "lineWidth": "Espessura da Linha"
+                    },
+                    "geometries": {
+                        "polygon": "Polígono",
+                        "line": "Linha"
+                    }
+                },
+                "options": {
+                    "captions": {
+                        "enableFunction": "Ativar/Desativar Função",
+                        "hideObjectInfo": "Os edifícios existentes podem ser desativados na representação, permitindo que você coloque elementos importados no terreno correspondente.<br><br>Inicie esta função através da Ativação e clique nos objetos desejados para que eles sejam desativados na visualização.<br><br>Todos os objetos ocultos aparecem em uma lista e podem ser reativados lá.",
+                        "hideSwitchLabel": "Ocultar Edifícios com Clique do Mouse",
+                        "pov": "Alternar para Visão de Pedestre",
+                        "povInfo": "Aqui você tem a possibilidade de assumir a perspectiva dos pedestres e olhar ao redor da cidade.<br><br>Navegue até a posição desejada. Assim que você colocar o cilindro no mapa com um clique do mouse, você entrará na visão de pedestre naquela posição.<br><br>Você pode mudar o campo de visão com movimentos do mouse. Para voltar à posição inicial, pressione a tecla ESC (Escape).",
+                        "povTitle": "Perspectiva de Pedestre",
+                        "visibilityTitle": "Opções de Visibilidade"
+                    }
+                },
+                "nav": {
+                    "drawTitle": "Desenhar",
+                    "importTitle": "Importar",
+                    "options": "Opções"
+                },
+                "hiddenObjectsLabel": "Edifícios Ocultos:",
+                "title": "Modelador 3D"
+            },            
+            "parcelSearch": {
+                "wrongConfig": "Configuração inválida ou incompleta",
+                "districtsLoadFailed": "A área comunitária não podia ser carregada",
+                "wrongConfigParcelsearch": "A configuração da pesquisa da parcela está incorrecta. Por favor contacte o apoio ao cliente.",
+                "parcelSearchImpossible": "Actualmente não é possível a consulta de parcelas!",
+                "tryAgainLater": "Por favor, tente novamente mais tarde.",
+                "parcelNotFound": "Não foi encontrada nenhuma parcela com o número {{flstNr}}.",
+                "district": "Área comunitária",
+                "choose": "por favor seleccione",
+                "parcelNumber": "Número da parcela",
+                "plot": "Parcela",
+                "parcelNumberPlaceholder": "Insira o número",
+                "generateReport": "Gerar relatório"
+            },
+            "selectFeatures": {
+                "zoomToFeature": "Zoom a esta funcionalidade",
+                "noFeatureChosen": "Nenhuma funcionalidade seleccionada. Seleccione as funcionalidades segurando Ctrl e arrastando uma caixa em torno das funcionalidades.",
+                "propertylessFeature": "Elemento sem atributos"
+            },
+            "supplyCoord": {
+                "title": "Consultar coordenadas",
+                "coordSystemField": "Sistema de coordenadas",
+                "copyToClipboard": "O conteúdo foi copiado para a cache.",
+                "hdms": {
+                    "eastingLabel": "Longitude",
+                    "northingLabel": "Latitude"
+                },
+                "cartesian": {
+                    "eastingLabel": "Coordenada Y",
+                    "northingLabel": "Coordenada X"
+                }
+            },
+            "gfi": {
+                "errorMessage": "Ocorreu um erro durante a consulta (GetFeatureInfo).<br>Por favor, tente novamente mais tarde. Se o problema ainda ocorrer, por favor contacte o operador do serviço.",
+                "favoriteIcons": {
+                    "compareFeatureIcon": {
+                        "toCompareList": "Inserir à lista de comparação",
+                        "fromCompareList": "Remover da lista de comparação"
+                    },
+                    "routingicon": {
+                        "routingDestination": "Tomar como alvo"
+                    }
+                },
+                "themes": {
+                    "default": {
+                        "imgAlt": "Nenhuma imagem podia ser carregada.",
+                        "noAttributeAvailable": "Não há atributo disponível!"
+                    },
+                    "sensor": {
+                        "sensor": {
+                            "dataName": "Ficheiros",
+                            "header": {
+                                "name": "Nome",
+                                "description": "Descrição",
+                                "ownerThing": "Proprietário"
+                            }
+                        },
+                        "sensorBarChart": {
+                            "clock": "{{value}} Hora",
+                            "chartTitleAverage": "Desativar valor médio",
+                            "month_one": "{{count}} Mês",
+                            "month_other": "{{count}} Meses",
+                            "year_one": "{{count}} Ano",
+                            "year_other": "{{count}} Anos",
+                            "previousWeekday": "Dia anterior",
+                            "nextWeekday": "Dia seguinte"
+                        },
+                        "sensorData": {
+                            "firstColumnHeaderName": "Características"
+                        },
+                        "chargingStations": {
+                            "available": "Disponibilidade",
+                            "charging": "Capacidade",
+                            "outoforder": "Fora de serviço"
+                        }
+                    }
+                }
+            },
+            "searchByCoord": {
+                "exampleAcronym": "Ex.",
+                "errorMsg": {
+                    "noCoord": "Por favor, introduza seu {{valueKey}} por completo.",
+                    "noMatch": "A introdução do {{valueKey}} não está correcta! (Exemplo: {{valueExample}})"
+                },
+                "hdmsEastingText": "Valor do $t(common:modules.tools.supplyCoord.hdms.eastingLabel)",
+                "hdmsNorthingText": "Valor do $t(common:modules.tools.supplyCoord.hdms.northingLabel)"
+            },
+            "draw": {
+                "clickToPlaceText": "Clique no mapa para inserir o texto",
+                "draw": "desenhar",
+                "geometryDrawFailed": "A geometria transmitida não pôde ser exibida.",
+                "undefinedTwoCircles": "Por favor, defina ambos os círculos.",
+                "undefinedInnerCircle": "Por favor, defina também o círculo interno.",
+                "undefinedDiameter": "Por favor especifique um diâmetro.",
+                "undefinedOuterCircle": "Por favor, defina também o círculo exterior.",
+                "undefinedSquareArea": "Por favor, defina a área do quadrado",
+                "limitReached_one": "Já desenhou o objecto {{count}}, por favor apague-o antes de continuar!",
+                "limitReached_other": "Já desenhou os objectos {{count}}, por favor apague um antes de continuar!",
+                "drawSymbol": "Símbolo",
+                "writeText": "Texto",
+                "drawLine": "Linhas",
+                "drawCurve": "Linha à mão livre",
+                "drawArea": "Área",
+                "drawSquare": "Quadrado",
+                "drawCircle": "Círculo",
+                "drawDoubleCircle": "Círculo duplo",
+                "doubleCirclePlaceholder": "Por favor introduza um diâmetro",
+                "diameter": "Diâmetro",
+                "outerDiameter": "Diâmetro exterior",
+                "unit": "Unidade",
+                "text": "Texto",
+                "method": "Método",
+                "interactive": "interactivo",
+                "defined": "definido",
+                "transparencyOutline": "Esquema de transparência",
+                "colorContour": "Cor dos contornos",
+                "innerColorContour": "Cor do contorno interior",
+                "outerColorContour": "Cor do contorno exterior",
+                "fontSize": "Tamanho de letra",
+                "fontName": "Fonte",
+                "size": "Tamanho (em px)",
+                "lineWidth": "Largura de linha",
+                "transparency": "Transparência",
+                "color": "Cor de preenchimento",
+                "button": {
+                    "draw": "Geometria / Desenhar texto",
+                    "undo": "Desfazer",
+                    "redo": "Repetir",
+                    "edit": "Editar geometria",
+                    "delete": "Geometria / Apagar texto",
+                    "deleteAll": "Remover tudo"
+                },
+                "symbol": "Símbolo",
+                "iconList": {
+                    "iconPoint": "Ponto",
+                    "iconLeaf": "Folha",
+                    "iconCloud": "Nuvem",
+                    "iconMeadow": "Relva"
+                },
+                "squareDefinedInfo": " (sem ter em conta a curvatura da Terra)",
+                "areaLabel": "Área",
+                "squareSideLengthLabel": "Comprimento do lado",
+                "lineLengthLabel": "comprimento total"
+            },
+            "download": {
+                "format": "Formato",
+                "pleaseChoose": "Seleccione por favor",
+                "filename": "Nome do ficheiro",
+                "enterFilename": "Por favor introduza o nome do ficheiro",
+                "createFirst": "Por favor, crie primeiro um desenho ou um texto!",
+                "formatNotSupported": "O formato {{selectedFormat}} ainda não é suportado.",
+                "unknownGeometry": "Geometria desconhecida:"
+            },
+            "measure": {
+                "geometry": "Geometria",
+                "measure": "Unidade",
+                "plzConsider": "Por favor note",
+                "valuesNotExact": "Os valores apresentados estão sujeitos a imprecisões",
+                "findFurtherInf": "Pode encontrar mais informações aqui",
+                "deleteMeasurements": "Apagar medidas",
+                "stretch": "Percurso",
+                "area": "Área",
+                "finishWithDoubleClick": "Fechar com duplo clique"
+            },
+            "scaleSwitcher": {
+                "label": "Escala"
+            }
+        },
+        "controls": {
+            "fullScreen": {
+                "enable": "Activar ecrã completo",
+                "disable": "Desactivar ecrã completo",
+                "toggle": "Alternar o ecrã completo"
+            },
+            "zoom": {
+                "zoomIn": "Aumentar o zoom",
+                "zoomOut": "Diminuir o zoom"
+            },
+            "orientation": {
+                "titleGeolocate": "Posição",
+                "titleGeolocatePOI": "Próximo de mim",
+                "geolocationDeniedText": "Localização não disponível",
+                "trackingDeniedText": "Acção 'Próximo de mim' não disponível"
+            },
+            "orientation3d": {
+                "compass": {
+                    "pointerNorth": "Polarizar a visão/ Rodar a visão",
+                    "pointerSouth": "Vista Sul",
+                    "pointerEast": "Vista Este",
+                    "pointerWest": "Vista Oeste",
+                    "moveNorth": "Mover para norte",
+                    "moveSouth": "Mover para sul",
+                    "moveWest": "Mover para oeste",
+                    "moveEast": "Mover para este"
+                },
+                "control": {
+                    "tiltDown": "Inclinar visão",
+                    "tiltReset": "Reinicializar visão",
+                    "zoomIn": "$t(common:modules.controls.zoom.zoomIn)",
+                    "zoomOut": "$t(common:modules.controls.zoom.zoomOut)"
+                }
+            },
+            "totalView": {
+                "titleButton": "Voltar ao ecrã inicial",
+                "titleMenu": "Visão principal"
+            },
+            "3d": {
+                "buttonTitle": "3D",
+                "openView3d": "Ligar a visualização",
+                "closeView3d": "Desligar a visualização"
+            },
+            "oblique": {
+                "buttonTitle": "Vista aérea oblíqua",
+                "openViewOblique": "Ligar vista aérea oblíqua",
+                "closeViewOblique": "Desligar vista aérea oblíqua",
+                "doNotUseIE": "A exibição de imagens aéreas oblíquas já não é suportada no Internet Explorer 11. Por favor, utilize um navegador actual para esta função."
+            },
+            "freeze": {
+                "freeze": "Bloquear visualização",
+                "unfreeze": "Desbloquear visualização",
+                "freezeTable": "$t(common:modules.controls.freeze.freeze)"
+            },
+            "backForward": {
+                "stepForward": "Próxima visualização",
+                "stepBackward": "Última visualização"
+            },
+            "attributions": {
+                "showAttributions": "Visualizar atribuição de camadas",
+                "hideAttributions": "Ocultar atribuição de camadas"
+            },
+            "overviewMap": {
+                "showOverviewControl": "Mostrar mapa geral",
+                "hideOverviewControl": "Ocultar mapa geral",
+                "showOverviewTable": "Mostrar Mini-Map",
+                "hideOverviewTable": "Ocultar Mini-Map",
+                "missingLayerId": "O mapa geral não pôde ser criado."
+            },
+            "mousePosition": {
+                "hint": "Mova o rato sobre o mapa",
+                "showMousePosition": "Mostrar",
+                "hideMousePosition": "Ocultar"
+            }
+        },
+        "searchbar": {
+            "placeholder": {
+                "addressHospitalBplan": "Pesquisa por endereço/hospital/B-Plan(Plano de desenvolvimento)",
+                "addressTopicParcel": "Pesquisa endereço, bairro, tópicos, parcela",
+                "address": "Pesquisa por endereço"
+            },
+            "locationFinder": {
+                "unknownProjection": "Resultados em sistema de coordenadas desconhecidas",
+                "serverError": "Erro durante o processamento do pedido do lado do servidor",
+                "invalidServiceId": "Erro durante a inicialização do módulo de pesquisa LocationFinder: ID de serviço inválido",
+                "errorMsg": "A pesquisa através do LocationFinder falhou",
+                "notFound": "Serviço não disponível"
+            },
+            "showAllResults": "mostrar todos os resultados",
+            "type": {
+                "street": "Rua",
+                "district": "Bairro",
+                "parcel": "Parcela",
+                "address": "Endereço",
+                "location": "Localização",
+                "subject": "Assunto",
+                "topic": "Tópico",
+                "general": "Tópico"
+            },
+            "specialWFS": {
+                "ongoing": "em processo",
+                "terminated": "verificado",
+                "hazardous": "Operação de emergência",
+                "childcare": "Infantário",
+                "bplan": "Plano de desenvolvimento",
+                "wrongGeomType": "Erro na pesquisa: Tipo de geometria não suportado. Verifique a saída da consola."
+            },
+            "bkg": {
+                "errorMsg": "Serviço de endereços do BKG não disponível."
+            },
+            "gaz": {
+                "errorMsg": "Gazetteer-URL não disponível."
+            },
+            "osm": {
+                "errorMsg": "Pesquisa OpenStreetMap não disponível."
+            },
+            "noInitialResults": "A pesquisa inicial não resultou em nenhum acerto."
+        },
+        "vectorStyle": {
+            "styleObject": {
+                "getGeometryTypeFromWFSFetchfailed": "A legenda não podia ser criada na camada de informação!",
+                "getGeometryTypeFromWFSFetchfailedMessage": "Detalhes: Um serviço necessário não responde."
+            }
+        },
+        "wmsTime": {
+            "layerSwiper": {
+                "title": "Confrontare gli strati"
+            }
+        },
+        "legend": {
+            "name": "Legenda",
+            "linkToPdf": "Para a lenda externa (PDF)",
+            "noLegendForLayerInfo": "Legenda não disponível",
+            "toggleCollapseAll": "Mostrar/ocultar todas as legendas"
+        }
+    },
+    "snippets": {
+        "checkbox": {
+            "on": "Ligar",
+            "off": "Desligar"
+        },
+        "graphicalSelect": {
+            "displayName": "Seleccionar geometria",
+            "selectBySquare": "Desenhar retângulo",
+            "selectByCircle": "Desenhar círculo",
+            "selectByPolygon": "Desenhar área",
+            "tooltipMessage": "Clique para iniciar e parar",
+            "tooltipMessagePolygon": "Clique para adicionar base"
+        },
+        "value": {
+            "deleteSelection": "Apagar selecção"
+        },
+        "slider": {
+            "date": "Data",
+            "time": "Horário",
+            "from": "a partir das",
+            "to": "até às",
+            "incorrectEntry": "Introduza um número inteiro!",
+            "outOfRangeErrorMessage": "O valor de entrada deve estar dentro do intervalo de validade {{minValueSlider}} e {{maxValueSlider}}!"
+        }
+    },
+    "share-components": {
+        "import": {
+            "browse": "Seleccionar ficheiro",
+            "dropzone": "Arquivar ficheiro aqui",
+            "introInfo": "Importe o ficheiro desejado simplesmente por arrastar e largar ou, em alternativa, com o diálogo 'Abrir' do navegador."
+        }
+    }
+}

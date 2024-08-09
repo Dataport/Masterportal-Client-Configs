@@ -1,0 +1,23 @@
+{
+	"name": "masterportal-configs",
+	"version": "0.1.0",
+	"description": "Configuration generator for multiple similar clients",
+	"main": "app/index.js",
+	"type": "module",
+	"scripts": {
+		"start": "env NODE_ENV=development node app",
+		"prod": "env NODE_ENV=production node app",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Dataport",
+	"license": "MIT",
+	"dependencies": {
+		"cookie-parser": "^1.4.6",
+		"express": "^4.18.2",
+		"jsonwebtoken": "^9.0.2",
+		"jwk-to-pem": "^2.0.5"
+	},
+	"devDependencies": {
+		"dotenv": "^16.4.5"
+	}
+}

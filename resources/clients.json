@@ -1,0 +1,62 @@
+{
+    "variantLabels": [
+        "location",
+        "version"
+    ],
+    "via": {
+        "location": {
+            "kiel": {
+                "name": "Kiel",
+                "start": [
+                    574950,
+                    6021211
+                ],
+                "extent": [
+                    560000,
+                    580000,
+                    6000000,
+                    6050000
+                ],
+                "erzeugung": true
+            },
+            "xanten": {
+                "name": "Xanten",
+                "start": [
+                    323866,
+                    5726545
+                ],
+                "extent": [
+                    310000,
+                    330000,
+                    5700000,
+                    5750000
+                ],
+                "erzeugung": false
+            }
+        },
+        "version": {
+            "grau": {
+                "login": false,
+                "backgroundMap": "wms-basemap-gray",
+                "version": "Basis"
+            },
+            "farbe": {
+                "login": true,
+                "backgroundMap": "wms-basemap-color",
+                "version": "Pro"
+            }
+        },
+        "role": {
+            "kiel": {
+                "farbe": true
+            },
+            "xanten": {
+                "farbe": true
+            },
+            "guest": {
+                "grau": true
+            }
+        }
+    },
+    "title": "Masterportal-Klientenkonfigurationsgenerator"
+}

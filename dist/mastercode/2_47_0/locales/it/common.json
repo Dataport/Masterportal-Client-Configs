@@ -1,0 +1,1432 @@
+{
+    "masterPortalVersion": "Masterportal V. {{masterPortalVersionNumber}}",
+    "general": {
+        "opened": "Aperto",
+        "cancelled": "Annullato",
+        "error": "Errore",
+        "success": "Successo"
+    },
+    "button": {
+        "back": "Indietro",
+        "download": "Scarica",
+        "search": "Cerca",
+        "close": "Chiudi",
+        "minimize": "Riduci",
+        "confirm": "Verifica",
+        "edit": "Modificare",
+        "delete": "Eliminare",
+        "save": "Salva",
+        "cancel": "Annulla",
+        "open": "Aprire",
+        "load": "Carico",
+        "reset": "Ripristina",
+        "stop": "Fermare"
+    },
+    "colors": {
+        "blue": "Blu",
+        "yellow": "Giallo",
+        "grey": "Grigio",
+        "green": "Verde",
+        "orange": "Arancione",
+        "red": "Rosso",
+        "black": "Nero",
+        "white": "Bianco"
+    },
+    "mouseHover": {
+        "infoText": "(Altri oggetti, ingrandire)"
+    },
+    "mapRegion": {
+        "twoFingerPanAlert": "Utilizzare due dita per navigare e zoomare sulla mappa."
+    },
+    "menu": {
+        "topics": "Livelli",
+        "name": "Menu",
+        "views": {
+            "name": "Visualizzazioni",
+            "view01": "Visualizzazione 1"
+        },
+        "wayToSchool": "Traccia tragitto scuola",
+        "filter": "Filtro",
+        "tools": {
+            "name": "Strumenti",
+            "compareFeatures": "Lista di confronto",
+            "parcelSearch": "Ricerca parcella catastale",
+            "print": "Stampa mappa",
+            "measure": "Misura distanza / area",
+            "coordToolkit": "Coordinate",
+            "coord": "Richiedi coordinate",
+            "supplyCoord": "Richiedi coordinate",
+            "searchByCoord": "Ricerca di coordinate",
+            "fileImport": "Importa file",
+            "modeler3D": "Modellatore 3D",
+            "draw": "Disegna / Scrivi",
+            "shadow": "Ombre",
+            "commuterLines": "Pendolare (Linea)",
+            "commuterAnimation": "Pendolare (Animazione)",
+            "layerSlider": "Linea del tempo",
+            "featureLister": "Elenco elementi",
+            "saveSelection": "Salva selezione",
+            "getInfos": "Richiedi dati",
+            "addWms": "Aggiungi WMS",
+            "wfsTransaction": "Strumento WFS-T",
+            "scaleSwitcher": "Cambia scala",
+            "selectFeatures": "Seleziona",
+            "legend": "Leggenda",
+            "styleVt": "Style Vector Tile Layers",
+            "bufferAnalysis": "Analisi del tampone",
+            "wfsSearch": "Ricerca WFS",
+            "routing": "Routing",
+            "layerClusterToggler": "Apire il gruppo di livelli"
+        },
+        "contact": "Contatti",
+        "info": "Informazioni"
+    },
+    "tree": {
+        "trafficCameras": "Webcam traffico",
+        "topicsHelp": "Guida albero di livelli",
+        "mapBackground": "Sfondo mappa grigio/bianco",
+        "pinTopicsTree": "Fissa l'albero di livelli",
+        "hideAllTopics": "Nascondi tutti i livelli",
+        "showAllTopics": "Mostra tutti i livelli",
+        "securedAllTopics": "Livelli protetti",
+        "category": "Categorie",
+        "backgroundMaps": "Mappe di sfondo",
+        "subjectData": "Dati specialistici",
+        "subjectData3D": "Dati 3D",
+        "subjectDataTime": "Serie temporale",
+        "selectedTopics": "Livelli selezionati",
+        "removeSelection": "Rimuovi livello",
+        "infosAndLegend": "Informazioni e legenda",
+        "removeTopic": "Nascondi livello selezionato",
+        "showTopic": "Mostra livello selezionato",
+        "securedTopic": "Livello protetto",
+        "changeClassDivision": "Cambia classificazione",
+        "settings": "Impostazioni",
+        "transparency": "Opacità",
+        "increaseTransparency": "Aumenta opacità",
+        "reduceTransparency": "Diminuisci opacità",
+        "removeLayer": "Rimouvi livello",
+        "levelUp": "Salire di livello",
+        "levelDown": "Scendere di livello",
+        "externalTechnicalData": "Dati specialistici esterni",
+        "selectedFeatures": "Selezione:",
+        "filterIconText": "Filtro aperto",
+        "scaleText": "Visualizzato nella seguente area di scala: "
+    },
+    "date": "Data",
+    "time": "Tempo",
+    "modules": {
+        "core": {
+            "modelList": {
+                "layer": {
+                    "wrongStyleId": "Non è stato possibile trovare alcun stile sotto lo StyleId specificato: {{styleId}}. Assicurarsi che uno stile con lo StyleId: {{styleId}} sia configurato nello Style.json configurato.",
+                    "sensor": {
+                        "httpOnError": "<strong>Si è verificato un errore imprevisto durante il caricamento dei dati del sensore del livello {{name}}</strong>"
+                    },
+                    "wms": {
+                        "allowCookies": "<strong>Per favore permettete i cookie in modo che questa mappa di sfondo possa essere caricata</strong>",
+                        "errorTimeLayer": "Si è verificato un errore durante la preparazione del livello con l'id {{id}}: {{error}}",
+                        "invalidTimeLayer": "Il livello configurato con l'id {{id}} non contiene tutti i parametri necessari per un WMS-T.",
+                        "warningTimeLayerQuantity": "<strong>Attenzione:</strong> Inizialmente è stato selezionato più di un timelayer. </br>Solo <strong>il {{name}} </strong>viene visualizzato."
+                    }
+                }
+            }
+        },
+        "alerting": {
+            "hideMessage": "Non visualizzare più questo messaggio",
+            "categories": {
+                "error": "Errore",
+                "info": "Informazione",
+                "success": "Successo",
+                "warning": "Attenzione"
+            }
+        },
+        "confirmAction": {
+            "defaultHeadline": "Conferma richiesta",
+            "defaultCopy": "Si prega di confermare questa azione.",
+            "defaultConfirmCaption": "OK",
+            "defaultDenyCaption": "Cancella"
+        },
+        "language": {
+            "languageTitle": "Si prega di selezionare una lingua",
+            "toggleWindow": "Aprire o chiudere la finestra",
+            "de": "Deutsch",
+            "en": "English",
+            "es": "Español",
+            "it": "Italiano",
+            "platt": "Platt",
+            "pt": "Português",
+            "ru": "Русский",
+            "tr": "Türkçe",
+            "ua": "Українська"
+        },
+        "cswParser": {
+            "noMetadataMessage": "Metadati non disponibili.",
+            "continual": "continuamente",
+            "daily": "quotidiano",
+            "weekly": "settimanale",
+            "fortnightly": "quindicinale",
+            "monthly": "mensile",
+            "quarterly": "trimestrale",
+            "biannually": "semestrale",
+            "annually": "annualmente",
+            "asNeeded": "se richiesto",
+            "irregular": "irregolarmente",
+            "notPlanned": "non previsto",
+            "unknown": "sconosciuto"
+        },
+        "layerInformation": {
+            "additionalMetadata": "altri metadati",
+            "addressSuffix": "indirizzo",
+            "multiAddress": "indirizzi di servizio",
+            "attachFileMessage": "Allegare il file, se necessario.",
+            "closeButton": "Chiudi",
+            "downloadDataset": "Scarica dati",
+            "errorMessage": "L'interrogazione dei metadati non è riuscita. Se il problema persiste, contattare il proprietario del servizio: <b>{{cswObjCswUrl}}</b>",
+            "informationAndLegend": "Informazioni e legenda",
+            "lastModified": "Ultimo aggiornamento",
+            "legend": "Legenda",
+            "noMetadataLoaded": "Non è stato possibile caricare metadati!",
+            "noMetadataMessage": "$t(modules.cswParser.noMetadataMessage)",
+            "periodicityTitle": "Periodicità",
+            "publicationCreation": "Pubblicazione / Creazione",
+            "buildings": "Edificio",
+            "changeLayerInfo": "Modifica del testo informativo"
+        },
+        "mapMarker": {
+            "nostyleObject": "Non è stato possibile trovare uno stile per lo StyleId specificato: {{styleId}}. Si prega di controllare la configurazione."
+        },
+        "menu": {
+            "layer": {
+                "basicAuthError": "Spiacenti, il livello sicuro non ha potuto essere caricato. Contattate l'amministratore e fategli sapere se vi è stato chiesto di inserire un nome utente e una password. </br> Livello protetto: "
+            }
+        },
+        "featureViaURL": {
+            "coordLabel": "Coordinate",
+            "featureLabel": "Etichetta",
+            "folderName": "feature trasferito via URL",
+            "typeLabel": "Tipo di geometria",
+            "messages": {
+                "featureParsing": "FeatureViaURL: Non tutti i feature trasferiti sono stati elaborati.",
+                "featureParsingAll": "FeatureViaURL: Nessuno dei feature passati contiene il tipo di dati corretto. Si prega di fare riferimento alla documentazione.",
+                "featureParsingNoneAdded": "FeatureViaURL: A tutti i feature passati manca almeno un parametro. Non sono stati aggiunti elementi alla mappa.  Si prega di fare riferimento alla documentazione.",
+                "geometryNotSupported": "FeatureViaURL: Il tipo di geometria {{geometryType}}} dichiarata nella configurazione per il layer {{layerId}} non è supportato.",
+                "layerNotFound": "FeatureViaURL: Non è stato possibile trovare alcun layer con l'ID {{layerId}}.",
+                "noLayers": "FeatureViaURL: Nella configurazione non è stato definito alcun layer per i feature trasferiti.",
+                "noNameDefined": "FeatureViaURL: Nella configurazione non è stato specificato un nome per layer {{layerId}}.",
+                "defaultTreeNotSupported": "FeatureViaURL è supportato solo per Treetype custom o light."
+            }
+        },
+        "highlightFeaturesByAttribute": {
+            "messages": {
+                "requestFailed": "Richiesta di dati fallita.",
+                "configurationError": "Configurazione non corretta. Controllare l'output della console."
+            }
+        },
+        "quickHelp": {
+            "titleTag": "Apri/chiudi guida",
+            "search": {
+                "title": "Guida - Cerca",
+                "generalInfo": "Generale",
+                "addressSearch": "Ricerca indirizzo",
+                "houseNumberSearch": "Ricerca tutti i numeri civici di una strada",
+                "topicsSearch": "Ricerca livello / geodati",
+                "parcelSearch": "Ricerca pacco catastale",
+                "generalInfoHelp1": "Almeno tre lettere devono essere inserite nella maschera di ricerca <strong>(1)</strong> per ricevere suggerimenti. Un massimo di cinque suggerimenti saranno visualizzati in modo casuale <strong>(2)</strong>. Un'icona prima e un'etichetta dopo il suggerimento <strong>(3)</strong> indicano di quale \"categoria\" si tratta.",
+                "generalInfoHelp2": "Cliccando sulla lente di ingrandimento <strong>(1)</strong> o premendo il tasto Invio, tutti i risultati sono elencati per categoria, compreso il numero di risultati per categoria <strong>(2)</strong>. Cliccando di nuovo su una delle categorie saranno visualizzati i rispettivi risultati <strong>(3)</strong>.",
+                "addressHelp": "Inserite l'indirizzo che cercate nella maschera di ricerca. Premendo il tasto Invio o la lente d'ingrandimento o cliccando con il mouse sull'indirizzo nella lista dei suggerimenti, la mappa ingrandisce l'indirizzo cercato. La posizione esatta dell'indirizzo è indicata da un'icona sulla mappa.",
+                "houseNumberHelp": "Inserire il nome della via nella maschera di ricerca. Appena la ricerca dell'indirizzo trova una sola via, la ricerca dei numeri civici viene eseguita automaticamente e l'elenco dei suggerimenti viene riempito con gli indirizzi.Premendo il tasto Invio o cliccando sulla lente d'ingrandimento, vengono elencati tutti i numeri civici della via.",
+                "topicsHelp": "Nella ricerca per livelli è possibile inserire i parametri di ricerca (ad es. aree protette, abitazioni, ecc.) e cercare i geodati disponibili su questo livello.  Quando si seleziona un risultato, esso viene visualizzato direttamente sulla mappa.",
+                "parcelHelp": "È possibile cercare i pacchi di terreno utilizzando il numero di parcella e il numero del quartiere. Basta inserire il numero del quartiere seguito dal numero del pacco <strong>(1)</strong> (con o senza spazi) nella maschera di ricerca e premere il tasto Invio o fare clic sulla lente d'ingrandimento. A questo punto la mappa è centrata sul pacco cercato <strong>(2)</strong>."
+            },
+            "topicTree": {
+                "title": "Guida - Albero di livelli",
+                "topics": "Come è strutturato l'albero dei livelli sotto i dati specialistici?",
+                "selection": "Che cos'è la selezione?",
+                "saveSelection": "Salva la selezione",
+                "topicsHelp1": "L'albero dei livelli è suddiviso in mappe di sfondo, un catalogo dei dati specialistici e la selezione corrente dei livelli della mappa.",
+                "topicsHelp2": "L'FHH-Atlas mostra tutti i livelli della mappa a cui è assegnato un record di dati nel catalogo dei metadati di Amburgo (HMDK). LGV effettua l'assegnazione secondo le referenze dell'HMDK. In caso di dubbio, viene stipulato un accordo con i titolari dei dati personali. I set di dati assegnati ai livelli della mappa controllano la struttura automatica dell'albero dei lievelli nell FHH-Atlas:<br/><br/> Le categorie superiori dell'albero dei livelli risultano dalle categorie OPEN DATA (ad es. Popolazione, Salute) assegnate ai set di dati nell'HMDK (vedi immagine sotto).  Ogni set di dati appare nella sua categoria. Attualmente, per selezionare una categoria OPEN DATA, il set di dati deve essere pubblicato anche come OPEN DATA. Questa limitazione tecnica sarà presto eliminata da un ulteriore sviluppo dell'interfaccia di immissione dati HMDK. La selezione di una categoria di OPEN DATA può quindi essere effettuata indipendentemente dalla pubblicazione come OPEN DATA. Se a un dataset non viene assegnata alcuna categoria, il dataset viene visualizzato nell'albero dei livelli alla voce Diversi.<br/> Abbiamo scelto le categorie OPEN DATA perché anche i dati nel portale della trasparenza sono ordinati secondo queste categorie e molti dataset in conseguenza sono già categorizzati.<br/> In alternativa, l'albero può essere strutturato anche secondo le categorie INSPIRE.",
+                "topicsHelp3": "Il livello sotto le categorie superiori rappresenta un set di dati dell'HMDK. Se ad un set di dati vengono assegnati più livelli di mappa, viene creata una cartella. La cartella è nominata come il dataset nel HMDK (ad es. i punti di conteggio del traffico di Amburgo, vedi la foto sotto). All'interno della cartella si trovano i singoli layer della mappa che sono assegnati al set di dati (ad es. il punto di conteggio della domanda, vedi immagine sotto). (Per gli esperti: i livelli di mappa sono solitamente denominati come sono denominati nel servizio di mappe associato, cioè come sono stati nominati nel documento di mappa sottostante)<br/> Se esattamente un livello di mappa è assegnato ad un insieme di dati, viene creata una semplice voce nell'albero dei livelli. La voce semplice è anche chiamata come il dataset nel HMDK (ad esempio, lavori stradali correnti, vedi immagine sotto).<br/> Per ogni livello, il pulsante i (<span class=\"{{iconCls}}\"></span>) può quindi essere usato per richiamare i metadati associati per i dataset.",
+                "topicsHelp4": "L'albero dei livelli viene generato e aggiornato quotidianamente sulla base delle informazioni contenute nell'HMDK. Se il record che state cercando non compare nella categoria corretta, potete modificarlo voi stessi. È sufficiente regolare la categoria OPEN DATA nella voce HMDK associata e il giorno successivo il set di dati apparirà nella categoria corretta nel FHH-Atlas. Se i livelli di mappa assegnati non sono corretti, si prega di contattare GVGeoportal@gv.hamburg.de.<br/><br/>Chiediamo di controllare la correttezza delle categorie. Se a un record in HMDK vengono assegnate più categorie, il record apparirà più volte nell'albero dei livelli. Per motivi di chiarezza, si consiglia di assegnare una sola categoria per record.",
+                "topicsHelp5": "Nella selezione vengono visualizzati i livelli selezionati dal'albero dei livelli sotto dati specialistici. Nelle impostazioni (<span class=\"{{iconCls}\"></span>) di ogni livello della mappa, si può impostare l'ordine di visualizzazione e la trasparenza. Naturalmente, il layer può essere reso visibile, invisibile e rimosso dalla selezione. La selezione mostra anche se un livello della mappa non può essere visualizzato nella scala corrente. La voce viene poi cancellata.",
+                "topicsHelp6": "Con il pulsante \"Salva selezione\" appare una piccola finestra popup con un URL. I livelli selezionati e la sezione di mappa corrente sono salvati in questo URL. Se l'FHH-Atlas viene aperto tramite questo URL, gli argomenti precedentemente selezionati vengono automaticamente inclusi nella selezione. Inoltre, la mappa ingrandisce la sezione della mappa memorizzata nell'URL. Per garantire che l'FHH-Atlas si apra sempre con questa selezione di argomenti, questo URL può essere salvato come segnalibro."
+            },
+            "routingTool": {
+                "header": "Aiuto - Instradamento",
+                "headerGeneral": "Generale",
+                "textGeneral": "Lo strumento \"Rotta\" può essere utilizzato per calcolare il percorso più breve o più veloce tra un numero qualsiasi di waypoint. Inoltre, è possibile analizzare l'accessibilità da un certo punto di partenza entro un determinato tempo o distanza. Si possono prendere in considerazione diversi mezzi di trasporto come auto, camion, pedoni, biciclette o sedie a rotelle. Facendo clic sulle schede Pianificazione del percorso (1) e Accessibilità (2), è possibile passare alle diverse aree.",
+                "headerMeansOfTransport": "<h4>Selezionare il mezzo di trasporto</h4>",
+                "textMeansOfTransport": "È possibile scegliere tra diversi mezzi di trasporto (auto, camion, ecc.). Il mezzo di trasporto attivo è contrassegnato in rosso.",
+                "routing": {
+                    "header": "Pianificazione del percorso",
+                    "text": "I percorsi possono essere calcolati nella scheda \"Pianificazione del percorso\". Inoltre, è possibile calcolare in massa i percorsi grazie all'elaborazione batch integrata. Per la pianificazione del percorso sono disponibili le seguenti opzioni di input:",
+                    "headerAdditionOfWaypoints": "<h4>Aggiungi punti di passaggio</h4>",
+                    "textAdditionOfWaypoints": "I punti di partenza, di destinazione e di passaggio del percorso possono essere aggiunti inserendo località, indirizzi o coordinate nei campi di ricerca (1) o facendo clic sulla mappa. Il percorso viene creato automaticamente non appena sono disponibili almeno due waypoint.",
+                    "textAdditionOfWaypoints2": "Oltre a inserire indirizzi e luoghi (1), è possibile inserire direttamente le coordinate geografiche (WGS-84) come waypoint nei campi di ricerca. A tal fine, inserire le coordinate in gradi decimali (longitudine/latitudine) separate da una virgola e da uno spazio. Voci di esempio:",
+                    "headerRestrictedAreas": "<h4>Aree di blocco</h4>",
+                    "textRestrictedAreas": "È possibile definire aree riservate (3), che vengono \"aggirate\" di conseguenza durante la pianificazione del percorso. Al punto (2) è possibile attivare la modalità di disegno e cancellazione delle aree riservate sulla mappa. La modalità attivata è contrassegnata in rosso.",
+                    "headerAvoidTrafficRoutes": "<h4>Preferenza di percorso/evitare percorsi di traffico</h4>",
+                    "textAvoidTrafficRoutes": "In (1) è possibile scegliere se calcolare il percorso più veloce o più breve. Inoltre, in base al punto (2) è possibile escludere dal calcolo del percorso alcune vie di traffico",
+                    "headerRouteDescription": "<h4>Direzioni</h4>",
+                    "textRouteDescription": "Dopo la creazione del percorso, viene visualizzata una descrizione testuale del percorso (1) (inclusi distanza e tempo di percorrenza). Facendo clic sulle singole descrizioni (2), la vista della mappa si ingrandisce automaticamente sul segmento di percorso corrispondente (3).",
+                    "headerExport": "<h4>Itinerari - Esportazione</h4>",
+                    "textExport": "È anche possibile esportare i percorsi creati per un'ulteriore elaborazione (ad esempio in GIS o in dispositivi di navigazione). A tale scopo sono disponibili i formati GEOJSON, KML e GPX."
+                },
+                "routingBatchProcessing": {
+                    "header": "Elaborazione batch Instradamento",
+                    "text": "Nella scheda \"Pianificazione del percorso\" è anche possibile effettuare calcoli di massa dei tempi di percorrenza e delle distanze per i percorsi. A tal fine, è necessario attivare la casella di controllo \"Elaborazione batch\" (1). Successivamente, è possibile caricare nell'applicazione un file CSV con i punti di inizio e fine tramite trascinamento (2) o selezione del file (3). Il file CSV deve avere il formato e la struttura seguenti:",
+                    "listFormat": "- Formato CSV / Codifica UTF8",
+                    "listCoordinates": "- Coordinate dei punti di inizio e fine in WGS84 (EPSG:4326)",
+                    "listSeperation": "- I valori sono separati dal punto e virgola \";\" e il separatore decimale è il punto \".\"",
+                    "listStructure": "- Struttura: ID;lon(punto iniziale);lat(punto iniziale);lon(punto finale);lat(punto finale)",
+                    "listExample": "- Beispiel: 1;8.12;50.67;9.12;51.67",
+                    "text2": "Dopo che il file è stato caricato con successo, inizia automaticamente il calcolo dei tempi di percorrenza e delle distanze dai singoli punti di partenza e di arrivo. A tal fine vengono utilizzate le impostazioni selezionate nella scheda \"Pianificazione del percorso\" (mezzi di trasporto, evitare le strade trafficate, ecc.). L'avanzamento dell'elaborazione può essere visualizzato nell'interfaccia (1). Dopo l'elaborazione, viene scaricato automaticamente un file di risultati (file CSV). Se non è possibile calcolare i singoli percorsi, nel file dei risultati (3) viene emessa una riga vuota (ID;;;;;;;) e dopo l'elaborazione batch viene emesso un messaggio di errore corrispondente (2)",
+                    "text3": "Il file dei risultati (3) contiene quindi informazioni sul tempo richiesto (in minuti) e sulla distanza (in metri) del percorso tra il punto di partenza e quello di arrivo, nonché sul mezzo di trasporto selezionato (profilo)."
+                },
+                "isochrones": {
+                    "header": "Accessibilità",
+                    "text": "Nella scheda \"Accessibilità\" è possibile effettuare analisi dell'accessibilità da una posizione geografica (punto di partenza) entro tempi o distanze predefinite. Come risultato del calcolo, le zone di accessibilità (poligoni) vengono emesse o visualizzate nella vista mappa. Per l'accessibilità sono disponibili le seguenti opzioni di input:",
+                    "headerAdditionOfStartpoint": "<h4>Aggiungi il punto di partenza</h4>",
+                    "textAdditionOfStartpoint": "I punti di partenza possono essere aggiunti inserendo località, indirizzi o coordinate nel campo di ricerca (1) o facendo clic sulla mappa",
+                    "textAdditionOfStartpoint2": "Oltre a inserire indirizzi e luoghi (1), è possibile inserire direttamente le coordinate geografiche (WGS-84) come waypoint nei campi di ricerca. A tal fine, inserire le coordinate in gradi decimali (longitudine/latitudine) separate da una virgola e da uno spazio. Voci di esempio:",
+                    "headerOptimizationAvoidTrafficRoutes": "<h4>Ottimizzare/evitare il traffico</h4>",
+                    "textOptimizationAvoidTrafficRoutes": "Alla voce (1) è possibile selezionare se l'accessibilità deve essere calcolata in base a tempi predefiniti (in minuti) o a distanze (in km). Inoltre, in base al punto (2), alcune vie di comunicazione possono essere escluse dal calcolo dell'accessibilità",
+                    "headerIntervalMaxDistance": "<h4>Intervalli e distanza massima</h4>",
+                    "textIntervalMaxDistance": "Con i cursori Tempo massimo di percorrenza/distanza (1) e Intervallo (2) è possibile selezionare quali accessi devono essere calcolati per il punto di partenza. L'impostazione Tempo massimo di percorrenza/distanza (1) specifica l'accessibilità massima. L'intervallo di scorrimento (2) può essere utilizzato per determinare quante altre zone di accessibilità devono essere determinate entro la durata/distanza massima del viaggio. Ad esempio, con una durata massima del viaggio di 60 minuti e un intervallo selezionato di 15 minuti, vengono calcolate quattro zone di accessibilità (15, 30, 45, 60 minuti).",
+                    "headerPerformCalculation": "<h4>Eseguire il calcolo</h4>",
+                    "textPerformCalculation": "Fare clic sul pulsante \"Calcola\" (1) per eseguire l'analisi dell'accessibilità. Al termine del calcolo, le zone di accessibilità calcolate (2) vengono visualizzate nella vista mappa. Ulteriori informazioni sulle zone di accessibilità possono essere visualizzate tramite la legenda (3) dell'interfaccia.",
+                    "headerExport": "<h4>Esportazione di zone di accessibilità</h4>",
+                    "textExport": "È anche possibile esportare le zone di accessibilità generate per ulteriori elaborazioni (ad esempio in GIS). A tale scopo sono disponibili i formati GEOJSON e KML."
+                },
+                "isochronesBatchProcessing": {
+                    "header": "Elaborazione in batch Accessibilità",
+                    "text": "Nella scheda \"Accessibilità\" è anche possibile effettuare calcoli di massa delle accessibilità. A tal fine, è necessario attivare la casella di controllo \"Elaborazione batch\" (1). Successivamente, è possibile caricare nell'applicazione un file CSV con i punti di partenza mediante trascinamento (2) o selezione del file (3). Il file CSV deve avere il formato e la struttura seguenti:",
+                    "listFormat": "- Formato CSV / Codifica UTF8",
+                    "listCoordinates": "- Coordinate dei punti di partenza in WGS84 (EPSG:4326)",
+                    "listSeperation": "- I valori sono separati dal punto e virgola \";\" e il separatore decimale è il punto \".\"",
+                    "listStructure": "- Struttura: ID;lon(punto di partenza);lat(punto di partenza)",
+                    "listExample": "- Esempio: 1;8.12;50.67",
+                    "text2": "Dopo aver caricato il file, il calcolo dell'accessibilità ai singoli punti di partenza inizia automaticamente. A tal fine vengono utilizzate le impostazioni selezionate nella scheda \"Accessibilità\" (mezzo di trasporto, durata del viaggio, intervallo, ecc.). L'avanzamento dell'elaborazione può essere visualizzato nell'interfaccia (1). Dopo l'elaborazione, viene scaricato automaticamente un file di risultati con i poligoni delle zone di accessibilità in formato GEOJSON. Se non è possibile calcolare le singole zone di raggiungibilità, nel file GEOJSON viene generata una caratteristica puntuale con le coordinate del punto di partenza e il messaggio di errore, e dopo l'elaborazione batch viene emesso un messaggio di errore corrispondente (2).",
+                    "text3": "Il file GEOJSON generato contiene quindi le geometrie calcolate (poligoni) delle singole accessibilità e le informazioni associate (come ID, distanza o tempo, mezzo di trasporto selezionato, intervallo) come attributi (2). Il file scaricato può essere integrato direttamente nei sistemi GIS (ad esempio QGIS) (1) per un'ulteriore elaborazione."
+                }
+            }
+        },
+        "footer": {
+            "designation": "Cartografia e design:",
+            "mapDiscrepancy": "Segnala errore nella mappa",
+            "scale": "Scala della mappa",
+            "mouse": "Posizione del mouse"
+        },
+        "tools": {
+            "info": {
+                "disclaimer": "Esclusione di responsabilità",
+                "home": {
+                    "name": "Amburgo"
+                }
+            },
+            "addWMS": {
+                "completeMessage": "I layer del WMS richiesto sono stati aggiunti all'albero dei livelli alla voce di menu <strong>Dati specialistici esterni</strong>!",
+                "error": "Non è stato possibile trovare alcun WMS valido sotto l'URL indicato!",
+                "errorMessage": "Il servizio specificato non ha potuto essere caricato. Si prega di assicurarsi che l'URL sia stato specificato correttamente.<br><br>Se il problema si verifica ancora, si prega di contattare il gestore del servizio con la seguente nota:<br><strong>CORS-Header deve essere obbligatoriamente impostata per il servizio. Questo è raccomandato nel capitolo 4.7.1. da <a target='_blank' href='https://www.gdi-de.org/SharedDocs/Downloads/DE/GDI-DE/Dokumente/Architektur_GDI-DE_Bereitstellung_Darstellungsdienste.pdf?__blob=publicationFile'>GDI-DE</a></strong>",
+                "errorHttpsMessage": "Il WMS che avete richiesto utilizza HTTP. Il Masterportal può integrare WMS solo utilizzando HTTPS (SSL).",
+                "errorEmptyUrl": "Inserire l'URL di un WMS nel campo di testo!",
+                "placeholder": "Inserire qui l'URL del WMS.",
+                "textLoadLayer": "Carica",
+                "ifInExtent": "I geodati forniti tramite il WMS sono al di fuori dell'area visualizzabile. WMS non aggiunto.",
+                "checkVersion": "Aggiungere WMS è possibile solo se la versione del WMS esterno è uguale o superiore a 1.3.0."
+            },
+            "contact": {
+                "error": {
+                    "mail": "Si prega di inserire un indirizzo e-mail valido.",
+                    "message": "Trasmissione e-mail non riuscita!",
+                    "messageInput": "Il messaggio deve essere lungo almeno {{length}} caratteri.",
+                    "phone": "A quale numero di telefono possiamo contattarvi?",
+                    "username": "Si prega di indicare il vostro nome."
+                },
+                "placeholder": {
+                    "mail": "Indirizzo e-mail",
+                    "message": "Si prega di formulare qui la vostra richiesta e premere \"$t(common:modules.tools.contact.sendButton)\".",
+                    "phone": "Numero di telefono",
+                    "username": "Nome"
+                },
+                "errorIncompleteDeclarations": "Si prega di compilare correttamente tutti i campi del modulo di contatto per poter inviare la richiesta.",
+                "mailSubject": "Richiesta di supporto per il portale",
+                "messageLabel": "Il vostro messaggio",
+                "privacyPolicy": {
+                    "info": "L'utente accetta che i suoi dati possano essere utilizzati per elaborare la sua richiesta. Ulteriori informazioni e istruzioni per la revoca sono disponibili nella <a href=\"{{privacyPolicyLink}}\" target=\"_blank\">politica sulla privacy</a>.",
+                    "label": "Si prega di accettare l'informativa sulla privacy."
+                },
+                "sendButton": "Invia",
+                "successMessage": "La vostra richiesta è stata inviata con successo",
+                "successTicket": "Il vostro numero di ticket è: "
+            },
+            "print": {
+                "titleLabel": "Titolo",
+                "titlePlaceholder": "Mio titolo",
+                "layoutLabel": "Layout",
+                "formatLabel": "Formato",
+                "dpiLabel": "DPI",
+                "scaleLabel": "Scala di stampa",
+                "withLegendLabel": "Con legenda",
+                "autoAdjustScale": "Regolazione automatica della scala di stampa",
+                "printLabel": "Stampa",
+                "downloadFile": "Scaricare",
+                "createDownloadFile": "Verrà creato...",
+                "alertMessage": "È stato superato il numero massimo di stampe parallele.<br>Riprovate non appena la creazione di altre stampe è stata completata.",
+                "waitForPrintErrorMessage": "La creazione della stampa non è riuscita.<br>Si prega di riprovare in un secondo momento o di contattare il gestore del portale.",
+                "withInfoLabel": "Con informazioni",
+                "vtlWarning": "Poiché MapFish 3 non supporta i livelli Vector Tile, i seguenti livelli attivi non appariranno nella vista di stampa:",
+                "layoutNameList": {
+                    "A4 Hochformat": "A4 Ritratto",
+                    "A4 Querformat": "A4 Paesaggio",
+                    "A3 Hochformat": "A3 Ritratto",
+                    "A3 Querformat": "A3 Paesaggio"
+                },
+                "hintInfoScale": "La scala di stampa selezionata differisce dalla scala della finestra della mappa. Questo può portare ad un diverso layout.",
+                "invisibleLayer": "I seguenti livelli non possono essere stampati nella scala di stampa selezionata {{{scale}}:"
+            },
+            "shadow": {
+                "shadowDisplay": "Visualizzazione d'ombra",
+                "pickDate": "Selezionare una data:",
+                "slideHour": "Selezionare un orario:",
+                "slideDate": "Selezionare una data:"
+            },
+            "styleVT": {
+                "introText": "È possibile applicare vari stili predefiniti ai layer VectorTiles per ottimizzare la vista per l'applicazione specifica.",
+                "noStyleableLayers": "Attualmente non ci sono livelli disponibili a cui questo strumento possa essere applicato.",
+                "theme": "Livello",
+                "chooseTheme": "Seleziona livello attivo",
+                "style": "Stile"
+            },
+            "featureLister": {
+                "chooseTheme": "Seleziona livello",
+                "visibleVectorLayers": "Livelli vettoriali visibili",
+                "list": "Elementi",
+                "details": "Dettagli",
+                "more": "Scaria di più",
+                "detailsOfSelected": "Dettagli del elemento selezionato",
+                "alert": "Il tentativo di mostrare la funzione selezionata è fallito perché non ha una geometria.",
+                "key": "{{shownFeatures}} di {{featureCount}} elementi scaricati"
+            },
+            "layerSlider": {
+                "displayLayers": "Visualizzazione di vari layer.",
+                "title": "Esempio simulazione WMS",
+                "titleNotConfigured": "Titolo non configurato",
+                "serviceOne": "Servizio 1",
+                "serviceTwo": "Servizio 2",
+                "serviceThree": "Servizio 3",
+                "serviceFour": "Servizio 4"
+            },
+            "filter": {
+                "filterButton": "Filtro",
+                "searchInMapExtent": "Ricerca nella sezione della mappa corrente",
+                "snippetTags": {
+                    "selectionText": "A voi la scelta:",
+                    "resetAll": "Reset"
+                },
+                "info": {
+                    "snippetCheckbox": "La casella di controllo può essere attivata/disattivata con un clic del mouse.",
+                    "snippetDropdown": "È possibile selezionare uno o più valori dall'elenco di valori indicato.",
+                    "snippetInput": "Nel campo di testo è possibile inserire i criteri di ricerca desiderati.",
+                    "snippetSlider": "Per inserire un valore numerico come criterio di ricerca, è possibile spostare il cursore a destra o a sinistra. Inoltre, è possibile inserire il valore direttamente nel campo di immissione.",
+                    "snippetSliderRange": "Per inserire valori numerici come criteri di ricerca minimi o massimi, è possibile spostare il cursore a sinistra o a destra. Inoltre, è possibile inserire i valori direttamente nei campi di input.",
+                    "snippetDate": "Per inserire una data come criterio di ricerca, fare clic nel campo di inserimento della data e selezionare una data dal calendario aperto.",
+                    "snippetDateRange": "Per inserire un intervallo di date come criterio di ricerca, fare clic nel campo di immissione per la data iniziale o finale e selezionare una data iniziale o finale dal calendario aperto."
+                },
+                "dropdown": {
+                    "defaultLabel": "Selezionare un'opzione",
+                    "selectAll": "Seleziona tutti",
+                    "deselectAll": "Deselezionare tutti",
+                    "emptyList": "L'elenco è vuoto",
+                    "noElements": "Nessun elemento trovato"
+                },
+                "ariaLabel": {
+                    "input": "Input per {{param}}",
+                    "checkbox": "Casella di controllo per {{param}}",
+                    "radio": "Radio per {{param}}",
+                    "dropdown": "SelectBox per {{param}}",
+                    "sliderRange": {
+                        "min": "Cursore min per {{param}}",
+                        "max": "Cursore massimo per {{param}}"
+                    },
+                    "slider": "Intervallo del cursore per {{param}}",
+                    "date": "Data per {{param}}",
+                    "dateRange": {
+                        "from": "Data di inizio del {{param}}",
+                        "to": "Data di fine di {{param}}"
+                    }
+                },
+                "filterResult": {
+                    "label": "Tutti i risultati del filtro",
+                    "unit": "{{amountOfFilteredItems}} Treffer"
+                },
+                "geometryFilter": {
+                    "activate": "Impostare l'area per il filtraggio",
+                    "help": "Selezionare un'area sulla mappa per filtrare solo in quell'area.",
+                    "selectGeometry": "Selezionare una geometria.",
+                    "buffer": "Puffer [m]",
+                    "removeGeometry": "Rimuovere l'area",
+                    "geometries": {
+                        "polygon": "Area",
+                        "rectangle": "Rettangolo",
+                        "circle": "Cerchio",
+                        "lineString": "Linea + Buffer"
+                    }
+                },
+                "download": {
+                    "label": "Scaricare i dati filtrati",
+                    "labelBtn": "Scaricare"
+                },
+                "upload": {
+                    "geometryParseError": "Non è stato possibile caricare la geometria specificata."
+                }
+            },
+            "pendler": {
+                "animation": {
+                    "domicile": "Residenza",
+                    "workplace": "Luogo di lavoro",
+                    "chooseDistrict": "Provincia",
+                    "chooseBorough": "Associazione comunitaria",
+                    "relationshipsToDisplay": "Numero di relazioni da visualizzare",
+                    "deleteGeometries": "Cancella geometrie",
+                    "noCommutersKnown": "Pendolari sconosciuti!",
+                    "people": "Persone",
+                    "csvDownload": "Scarica CSV",
+                    "start": "Inizia",
+                    "reset": "Resetta",
+                    "top5": "Top 5",
+                    "top10": "Top 10",
+                    "top15": "Top 15"
+                },
+                "lines": {
+                    "domicile": "Residenza",
+                    "workplace": "Luogo di lavoro",
+                    "chooseDistrict": "Provincia",
+                    "chooseBorough": "Associazione comunitaria",
+                    "relationshipsToDisplay": "Numero di relazioni da visualizzare",
+                    "deleteGeometries": "Cancella geometrie",
+                    "noCommutersKnown": "Pendolari sconosciuti!",
+                    "people": "Persone",
+                    "csvDownload": "Scarica CSV",
+                    "top5": "Top 5",
+                    "top10": "Top 10",
+                    "top15": "Top 15"
+                },
+                "general": {
+                    "attributionText": "<b>I dati non vengono rilasciati per scopi commerciali.</b><br>Fonte: Bundesagentur für Arbeit - <a href='https://statistik.arbeitsagentur.de/' target='_blank'>https://statistik.arbeitsagentur.de/</a>",
+                    "csvDownloadConfirm": "I dati non vengono rilasciati per scopi commerciali.\r\nFonte: Bundesagentur für Arbeit - https://statistik.arbeitsagentur.de/"
+                }
+            },
+            "compareFeatures": {
+                "title": "Lista di confronto",
+                "topicsSelection": "Seleziona livello",
+                "moreInfo": "Ulteriori informazioni",
+                "lessInfo": "Meno informazioni",
+                "exportAsPdf": "Esporta come PDF",
+                "removeFromList": "Rimuovere dalla lista",
+                "noFeatures": {
+                    "nothingSelected": "Non ci sono {{objects}} selezionati per la lista di confronto.",
+                    "objectName": "Oggetti",
+                    "info": "Cliccare su un oggetto nella mappa. Si apre una finestra con le rispettive informazioni. Nell'angolo in alto a destra c'è il simbolo di una stella {{iconEmptyStar}}. Cliccare su questa icona per aggiungere l'oggetto alla lista di confronto. L'icona della stella diventerà gialla {{iconYellowStar}}. Cliccando nuovamente sull'icona a forma di stella, la voce viene rimossa dalla lista di confronto."
+                },
+                "feedback": {
+                    "added": "La funzione è stata aggiunta all'elenco di confronto",
+                    "addedWithName": "{{currentFeatureName}} è stata aggiunta all'elenco di confronto",
+                    "notAdded": "Non è stato possibile aggiungere la funzione all'elenco di confronto",
+                    "notAddedWithName": "Non è stato possibile aggiungere {{currentFeatureName}} all'elenco di confronto",
+                    "limitReached": "Raggiunto il numero massimo di oggetti nella lista di confronto.",
+                    "removeObjects": "Rimuovere almeno un oggetto prima di procedere.",
+                    "goToComparisonlist": "Vai alla lista di confronto"
+                },
+                "trueFalse": {
+                    "true": "Si",
+                    "false": "No"
+                }
+            },
+            "saveSelection": {
+                "infoText": "Salva questo URL come segnalibro."
+            },
+            "layerClusterToggler": {
+                "idFormatError": "Controllare il LayerId. Il formato deve essere un array o un oggetto.",
+                "idError": "Il livello con l'ID {{ layerId }} non è stato caricato; verificare la correttezza dell'ID del livello."
+            },
+            "fileImport": {
+                "captions": {
+                    "introFormats": "E' possibile importare file KML (*.kml), GPX (*.gpx) o GeoJson (*.geojson, *.json).",
+                    "introDrawTool": "Le geometrie importate possono essere modificate in seguito. Per farlo, utilizzate lo strumento &quot;$t(common:menu.tools.draw)&quot;.",
+                    "drawTool": "Apri $t(common:menu.tools.draw)",
+                    "supportedFiletypes": {
+                        "auto": "Auto riconoscimento",
+                        "kml": "file KML (*.kml)",
+                        "gpx": "file GPX (*.gpx)",
+                        "geojson": "file GeoJson (*.geojson, *.json)"
+                    }
+                },
+                "alertingMessages": {
+                    "success": "Il file \"{{filename}}\" e' stato importato con successo.",
+                    "successPartly": "Il file \"{{filename}}\" e' stato parzialmente importato.",
+                    "formatError": "Il file \"{{filename}}\" non poteva essere letto. Assicuratevi che il formato del file è *.kml. *.gpx, *.geojson oppure *.json.",
+                    "missingFileContent": "Errore di lettura del file \"{{filename}}\". Verificare il tipo e il contenuto del file. Se il file appare senza errori, si prega di contattare il supporto.",
+                    "missingFormat": "Il formato del file {{formato}} non è supportato. Si prega di contattare il supporto.",
+                    "featureError": "Una caratteristica di questo file non poteva essere letta."
+                },
+                "successfullyImportedLabel": "Importato con successo:",
+                "title": "Importa file"
+            },
+            "modeler3D": {
+                "entity": {
+                    "captions": {
+                        "backToList": "Torna all'Elenco",
+                        "copyTitle": "Copiare il Modello 3D \"{{name}}\"",
+                        "delete": "Elimina Modello",
+                        "deletionTitle": "Elimina Modello 3D \"{{name}}\"",
+                        "dimensionsModel": "Mostra le dimensioni del Modello 3D “{{nome}}”.",
+                        "editInfo": "Modifica gli attributi del modello selezionato.",
+                        "editModel": "Modifica Modello 3D \"{{name}}\"",
+                        "incrementTooltip": "Tieni premuto Shift per aumentare il valore in modo più grossolano.",
+                        "modelName": "Nome del Modello",
+                        "pickupPlace": "Doppio clic su un oggetto per raccoglierlo o posizionarlo.",
+                        "projectionInfo": "Attenzione! Utilizzando il sistema di coordinate WGS84, potrebbero verificarsi imprecisioni. Si consiglia di utilizzare la notazione decimale.",
+                        "rotationPlaceholder": "Passi Incremento/Decremento",
+                        "rotation": "Rotazione",
+                        "rotationSwitch": "Passi Rotazione",
+                        "scale": "Scala",
+                        "steps": "Passi",
+                        "visibilityTitle": "Mostra/Nascondi Modello 3D \"{{name}}\"",
+                        "zoomTo": "Zoom su Modello 3D \"{{name}}\""
+                    },
+                    "deleteInteraction": {
+                        "confirm": "Elimina",
+                        "headline": "Attenzione",
+                        "text": "Sei sicuro di voler eliminare il modello \"{{name}}\"?"
+                    },
+                    "projections": {
+                        "adaptToHeight": "Adatta al Terreno",
+                        "cartesian": {
+                            "eastingLabel": "Est",
+                            "northingLabel": "Nord"
+                        },
+                        "hdms": {
+                            "eastingLabel": "Longitudine",
+                            "northingLabel": "Latitudine"
+                        },
+                        "height": "Altezza",
+                        "projection": "Sistema di Coordinate"
+                    }
+                },
+                "import": {
+                    "alertingMessages": {
+                        "featureError": "Impossibile leggere una caratteristica in questo file.",
+                        "fileSizeError": "La dimensione del file supera il limite di 100 MB.",
+                        "formatError": "Impossibile leggere il file \"{{filename}}\". Controlla se il file ha il formato *.gltf, *.obj, *.dae o *.geojson.",
+                        "missingFileContent": "Errore durante la lettura del file \"{{filename}}\". Verifica il tipo di file e il contenuto. Se il file non ha errori, contatta il supporto.",
+                        "missingFormat": "Il formato del file \"{{format}}\" non è supportato. Contatta il supporto.",
+                        "success": "Il file \"{{filename}}\" è stato importato correttamente.",
+                        "successPartly": "Il file \"{{filename}}\" è stato importato parzialmente."
+                    },
+                    "captions": {
+                        "introInfo": "Con l'importatore, puoi caricare, visualizzare e analizzare progetti urbani digitali nel modello 3D esistente della città.",
+                        "introInfo2": "Importa semplicemente il file desiderato trascinandolo e rilasciandolo o utilizzando la finestra di dialogo del browser.",
+                        "introFormats": "Puoi importare file glTF (*.gltf), OBJ (*.obj), Collada (*.dae) o GeoJSON.",
+                        "successfullyImportedLabel": "Modelli 3D Importati:"
+                    }
+                },
+                "draw": {
+                    "captions": {
+                        "beginModelling": "Modella Oggetto 3D",
+                        "clampToGround": "Allinea al Modello del Terreno",
+                        "color": "Colore",
+                        "controlInfo": "Clicca con il pulsante sinistro del mouse per impostare i punti. Utilizzare il tasto destro del mouse o un doppio clic per terminare il disegno.",
+                        "drawing": "Disegno",
+                        "drawName": "Nome",
+                        "drawnModels": "Modelli Disegnati:",
+                        "export": "Esporta",
+                        "exportTitle": "Esporta tutti i modelli disegnati in formato GeoJSON.",
+                        "extrudedHeight": "Altezza Estrusa",
+                        "fillColor": "Colore di Riempimento",
+                        "geometry": "Geometria",
+                        "introInfo": "Con questa funzione puoi disegnare oggetti 3D sulla mappa e modificarli e progettare in modo individuale. Puoi delineare edifici e poi, ad esempio, eseguire simulazioni di ombre.<br><br>Lo strumento consente anche di disegnare su edifici esistenti e oggetti importati. Un prerequisito è che tu abbia attivato l'altezza del terreno.<br><br>Utilizzando la funzione di esportazione, puoi esportare i tuoi progetti e caricarli nuovamente nell'applicazione successivamente utilizzando l'importatore.",
+                        "outlineColor": "Colore del Contorno",
+                        "transparency": "Trasparenza",
+                        "lineWidth": "Spessore della Linea"
+                    },
+                    "geometries": {
+                        "polygon": "Poligono",
+                        "line": "Linea"
+                    }
+                },
+                "options": {
+                    "captions": {
+                        "enableFunction": "Abilita/Disabilita Funzione",
+                        "hideObjectInfo": "Gli edifici esistenti possono essere disabilitati nella rappresentazione, consentendoti di posizionare gli elementi importati sulla proprietà corrispondente.<br><br>Per attivare questa funzione, fai clic su Abilita e fai clic sugli oggetti desiderati per disabilitarli nella vista.<br><br>Tutti gli oggetti nascosti compaiono in un elenco e possono essere riattivati lì.",
+                        "hideSwitchLabel": "Nascondi Edifici con Clic del Mouse",
+                        "pov": "Passa alla Vista Pedonale",
+                        "povInfo": "Qui hai la possibilità di assumere la prospettiva dei pedoni e guardarti intorno alla città.<br><br>Naviga fino alla posizione desiderata. Una volta posizionato il cilindro sulla mappa con un clic del mouse, entrerai nella vista pedonale in quella posizione.<br><br>Puoi cambiare il campo visivo con movimenti del mouse. Per tornare alla posizione iniziale, premi il tasto Esc (ESC).",
+                        "povTitle": "Vista Pedonale",
+                        "visibilityTitle": "Opzioni di Visibilità"
+                    }
+                },
+                "nav": {
+                    "drawTitle": "Disegna",
+                    "importTitle": "Importa",
+                    "options": "Opzioni"
+                },
+                "hiddenObjectsLabel": "Edifici Nascosti:",
+                "title": "Modellatore 3D"
+            },
+            "parcelSearch": {
+                "wrongConfig": "Configurazione non valida o incompleta",
+                "districtsLoadFailed": "I quartieri del governo non potevano essere caricati",
+                "wrongConfigParcelsearch": "La configurazione della ricerca dei pacchi non è corretta. Si prega di contattare il supporto.",
+                "parcelSearchImpossible": "Interrogazione attualmente impossibile!",
+                "tryAgainLater": "Si prega di provare più tardi.",
+                "parcelNotFound": "Nessun pacco trovato con il numero {{flstNr}}.",
+                "district": "Quartiere",
+                "choose": "seleziona quartiere",
+                "parcelNumber": "Numero di parcella",
+                "plot": "Trama",
+                "parcelNumberPlaceholder": "Inserire numero",
+                "generateReport": "Genera rapporto"
+            },
+            "selectFeatures": {
+                "zoomToFeature": "Zoom su questa voce",
+                "noFeatureChosen": "Nessuna voce selezionata. Selezionare le voci tenendo premuto il tasto Ctrl e trascinando una casella attorno alle voci da selezionare.",
+                "propertylessFeature": "Voce senza attributi"
+            },
+            "supplyCoord": {
+                "title": "Richiedi coordinate",
+                "coordSystemField": "Sistema di riferimento",
+                "hdms": {
+                    "eastingLabel": "Longitudine",
+                    "northingLabel": "Latitudine"
+                },
+                "cartesian": {
+                    "eastingLabel": "Longitudine",
+                    "northingLabel": "Latitudine"
+                }
+            },
+            "coordToolkit": {
+                "title": "Richiedi coordinate",
+                "supply": "Richiedi coordinate",
+                "search": "Ricerca di coordinate",
+                "searchBtn": "Cerca",
+                "coordSystemField": "Sistema di riferimento",
+                "heightLabel": "Altezza",
+                "noHeightWater": "Superficie dell'acqua, nessuna altezza disponibile",
+                "noHeightBuilding": "Area edificabile, nessuna altezza disponibile",
+                "heightLayerInfo": "La base delle informazioni sull'altezza è il \"{{layer}}\" con informazioni sull'altezza in metri sul livello del mare (NHN).",
+                "hdms": {
+                    "eastingLabel": "Latitudine",
+                    "northingLabel": "Longitudine"
+                },
+                "cartesian": {
+                    "eastingLabel": "Longitudine",
+                    "northingLabel": "Latitudine"
+                },
+                "exampleAcronym": "Es.",
+                "errorMsg": {
+                    "noCoord": "Si prega di inserire {{valueKey}} completo.",
+                    "noMatch": "L'input per {{valueKey}} non è corretto! Esempio: ",
+                    "hdmsNoCoord": "Inserire il valore {{valueKey}} completo.",
+                    "hdmsNoMatch": "L'input per il valore di {{valueKey}} non è corretto!",
+                    "example": "Esempio"
+                },
+                "hintSupply": "Clicca sulla mappa per richiedere le coordinate",
+                "hintSearch": "Immettere le coordinate da ricercare",
+                "copyCoordsBtn": "Copiare una coppia di coordinate",
+                "copyCoordBtn": " {{value}} copiare"
+            },
+            "gfi": {
+                "errorMessage": "Si è verificato un errore durante la query.<br>Si prega di riprovare in un secondo momento. Se il problema persiste, si prega di contattare l'operatore del servizio.",
+                "favoriteIcons": {
+                    "compareFeatureIcon": {
+                        "toCompareList": "Aggiungi alla lista del confronto",
+                        "fromCompareList": "Rimouvi dalla lista del confronto"
+                    }
+                },
+                "themes": {
+                    "default": {
+                        "imgAlt": "Non è stato possibile caricare alcuna immagine.",
+                        "noAttributeAvailable": "Nessun attributo disponibile!"
+                    },
+                    "sensor": {
+                        "sensor": {
+                            "dataName": "Dati",
+                            "header": {
+                                "name": "Nome",
+                                "description": "Descrizione",
+                                "ownerThing": "Proprietario"
+                            }
+                        },
+                        "sensorBarChart": {
+                            "clock": "ore {{value}}",
+                            "chartTitleAverage": "Valore medio da",
+                            "month_one": "{{count}} mese",
+                            "month_other": "{{count}} mesi",
+                            "year_one": "{{count}} anno",
+                            "year_other": "{{count}} anni",
+                            "previousWeekday": "Giorno precedente",
+                            "nextWeekday": "Giorno successivo",
+                            "noticeTextAvailable": "(Vengono presi in considerazione solo i dati con il valore disponibile/disponibile)",
+                            "noticeTextCharging": "(Vengono presi in considerazione solo i dati con il valore di carica/carico)",
+                            "noticeTextOutoforder": "(Vengono presi in considerazione solo i dati con il valore outoforder / out of order)"
+                        },
+                        "sensorData": {
+                            "firstColumnHeaderName": "Caratteristiche"
+                        },
+                        "chargingStations": {
+                            "available": "Disponibilità",
+                            "charging": "caricamento massimo",
+                            "outoforder": "Fuori servizio"
+                        }
+                    }
+                },
+                "boolean": {
+                    "true": "Si",
+                    "yes": "Si",
+                    "1": "Si",
+                    "false": "No",
+                    "no": "No",
+                    "0": "No"
+                }
+            },
+            "searchByCoord": {
+                "coordinateSystem": "Sistema di coordinate",
+                "hdms": {
+                    "eastingLabel": "Ampio",
+                    "northingLabel": "Lunghezza"
+                },
+                "cartesian": {
+                    "eastingLabel": "Valore di destra",
+                    "northingLabel": "Valore elevato"
+                },
+                "search": "Ricerca",
+                "exampleAcronym": "Es.",
+                "errorMsg": {
+                    "noCoord": "Si prega di inserire {{valueKey}} completo.",
+                    "noMatch": "L'input per {{valueKey}} non è corretto! Esempio: ",
+                    "hdmsNoCoord": "Inserire il valore {{valueKey}} completo.",
+                    "hdmsNoMatch": "L'input per il valore di {{valueKey}} non è corretto! Esempio"
+                }
+            },
+            "draw": {
+                "drawLayerVisible": "Mostra/nascondi disegno",
+                "clickToPlaceText": "Clicca sulla mappa per inserire il testo",
+                "download": {
+                    "createFirst": "Si prega di creare prima un disegno o un testo!",
+                    "enterFilename": "Inserire nome del file",
+                    "filename": "Nome del file",
+                    "format": "Formato",
+                    "formatNotSupported": "Il formato {{selectedFormat}} non è supportato.",
+                    "pleaseChoose": "Scegliere",
+                    "unknownGeometry": "Geometria sconosciuta:"
+                },
+                "draw": "disegna",
+                "geometryDrawFailed": "La geometria passata non poteva essere visualizzata.",
+                "undefinedTwoCircles": "Si prega di disegnare entrambi i cerchi.",
+                "undefinedInnerCircle": "Si prega di definire anche il cerchio interno.",
+                "undefinedRadius": "Specificare un raggio.",
+                "undefinedOuterCircle": "Si prega di definire anche il cerchio esterno.",
+                "undefinedSquareArea": "Definire l'area del quadrato",
+                "limitReached_one": "Avete già disegnato {{{count}}} oggetti, per favore cancellatelo prima di continuare!",
+                "limitReached_other": "Avete già disegnato {{{count}}} oggetti, per favore cancellatene uno prima di continuare!",
+                "drawSymbol": "Simbolo",
+                "writeText": "Testo",
+                "drawLine": "Linea",
+                "drawCurve": "Linea a mano",
+                "drawArea": "Area",
+                "drawSquare": "Quadrato",
+                "drawCircle": "Cerchio",
+                "drawDoubleCircle": "Cerchio doppio",
+                "doubleCirclePlaceholder": "Inserire un diametro",
+                "radius": "Raggio",
+                "innerRadius": "Raggio interno",
+                "outerRadius": "Raggio esterno",
+                "unit": "Unità",
+                "text": "Testo",
+                "method": "Metodo",
+                "interactive": "interattivo",
+                "defined": "definito",
+                "transparencyOutline": "Trasparenza contorno",
+                "colorContour": "Colore contorno",
+                "innerColorContour": "Colore contorno interno",
+                "outerColorContour": "Colore contorno esterno",
+                "fontSize": "Dimensione caratteri",
+                "fontName": "Tipo di carattere",
+                "size": "Dimensione (px)",
+                "lineWidth": "Larghezza linea",
+                "transparency": "Trasparenza",
+                "color": "Colore interno",
+                "button": {
+                    "draw": "Disegna geometria / testo",
+                    "undo": "Annulla",
+                    "redo": "Ripeti",
+                    "edit": "Modifica geometria",
+                    "editAttributes": "Modifica degli attributi",
+                    "delete": "Cancella geometria / testo",
+                    "deleteAll": "Cancella tutto",
+                    "saveDrawing": "Salva il disegno"
+                },
+                "symbol": "Simbolo",
+                "geometry": "Geometria",
+                "iconList": {
+                    "iconPoint": "Punto",
+                    "iconLeaf": "Foglio",
+                    "iconCloud": "Nuvola",
+                    "iconMeadow": "Campo",
+                    "gelber Pin": "pin giallo"
+                },
+                "attributeSelect": {
+                    "attributeKeyError": "Inserire una chiave per l'attributo.",
+                    "attributeDuplicatedKeyError": "La chiave dell'attributo esiste già.",
+                    "noFeatureSelected": "Al momento non è selezionata alcuna funzione. Selezionare una caratteristica!",
+                    "save": "Risparmiare",
+                    "remove": "Cancellare",
+                    "input": {
+                        "key": "Nuova chiave",
+                        "value": "Nuovo valore"
+                    }
+                },
+                "squareDefinedInfo": " (senza tenere conto della curvatura della terra)",
+                "areaLabel": "Area",
+                "squareSideLengthLabel": "Lunghezza del lato",
+                "lineLengthLabel": "lunghezza totale"
+            },
+            "measure": {
+                "geometry": "Geometria",
+                "measure": "Unità",
+                "deleteMeasurements": "Cancella misure",
+                "stretch": "Linea",
+                "area": "Area",
+                "influenceFactors": "I valori visualizzati sono soggetti a imprecisioni che sono influenzate, tra l'altro, dai seguenti fattori:",
+                "scale": "Scala",
+                "resolution": "Risoluzione della mappa",
+                "screenResolution": "Risoluzione dello schermo",
+                "inputAccuracy": "Precisione di digitazione e numero di punti digitalizzati e",
+                "measureDistance": "Lunghezza della linea o misura dell'area",
+                "finishWithDoubleClick": "Chiudere con un doppio clic",
+                "3dLength": "Lunghezza: {{length}}",
+                "3dHeight": " Altezza: {{heigth}}"
+            },
+            "scaleSwitcher": {
+                "label": "Scala"
+            },
+            "bufferAnalysis": {
+                "sourceSelectLabel": "Layer sorgente",
+                "targetSelectLabel": "Layer di destinazione",
+                "resultTypeLabel": "Tipo di risultato",
+                "overlapping": "entro i raggi",
+                "notOverlapping": "raggi esterni",
+                "rangeLabel": "Raggio (m)",
+                "clearButton": "Reset",
+                "saveButton": "Risparmiare",
+                "sourceLayerNotFound": "Il layer sorgente salvato con l'ID {{layerId}} non è stato trovato.",
+                "targetLayerNotFound": "Il layer di destinazione salvato con l'ID {{layerId}} non è stato trovato."
+            },
+            "wfsSearch": {
+                "wrongConfig": "Il layer con l'Id \"{{id}}\" dell'istanza di ricerca \"{{title}}\" non è definito.",
+                "noResults": "Non sono stati trovati risultati per i tuoi criteri di ricerca. Si prega di riprovare.",
+                "optionsPlaceholder": "Per favore, scegli un'opzione!",
+                "resetButton": "Azzerare",
+                "searchButton": "Cerca",
+                "resultListTitle": "Risultati della ricerca:",
+                "instancesSelectLabel": "Selezione dell'istanza",
+                "showResults": "Mostra i risultati",
+                "searchError": "Errore durante la ricerca delle caratteristiche: {{error}}.",
+                "userHelp": {
+                    "and": "e",
+                    "or": "o",
+                    "label": "Informazioni sui risultati della ricerca",
+                    "text": "I risultati della ricerca soddisfano le condizioni (clausole) {{userHelp}}."
+                },
+                "district": "Distretto",
+                "parcelNumber": "Numero di parcella"
+            },
+            "wfsTransaction": {
+                "layerSelectLabel": "Layer corrente:",
+                "polygonHint": "Tenere premuto il tasto Ctrl e muovere il mouse con il pulsante premuto per spostare un poligono.",
+                "fieldRequired": "Campo obbligatorio",
+                "interactionSelect": {
+                    "update": "Modifica della geometria",
+                    "delete": "Eliminare la geometria",
+                    "line": "Catturare la linea",
+                    "point": "Catturare il punto",
+                    "polygon": "Catturare la superficie"
+                },
+                "error": {
+                    "allLayersNotSelected": "Nell'albero degli argomenti non è stato attivato alcun livello WFS-T configurato per questo strumento.",
+                    "geometryOutOfRange": "La geometria disegnata è al di fuori dell'area consentita del livello.",
+                    "layerNotConfiguredCorrectly": "Ci sono problemi con la configurazione del layer selezionato per l'uso con questo strumento; forse manca il parametro 'featurePrefix'.",
+                    "layerNotSelected": "Il livello selezionato non è ancora stato attivato nell'albero dei temi.",
+                    "noFeature": "Disegnate una geometria associata alle vostre voci.",
+                    "onlyNumbersAllowed": "Il campo di immissione consente solo numeri.",
+                    "requiredPropertiesNotSet": "Inserire un valore valido per i campi obbligatori {{properties}}."
+                },
+                "transaction": {
+                    "success": {
+                        "baseSuccess": "Das {{transaction}} der Geometrie und ihrer Parameter war erfolgreich.",
+                        "delete": "$t(common:modules.tools.wfsTransaction.transaction.success.baseSuccess, {\"transaction\": \"Löschen\"})",
+                        "insert": "$t(common:modules.tools.wfsTransaction.transaction.success.baseSuccess, {\"transaction\": \"Speichern\"})",
+                        "selectedUpdate": "$t(common:modules.tools.wfsTransaction.transaction.success.baseSuccess, {\"transaction\": \"Bearbeiten\"})"
+                    },
+                    "error": {
+                        "genericFailedTransaction": "Purtroppo, il salvataggio o l'eliminazione della geometria e dei suoi parametri non è riuscito. Contattare l'amministratore.",
+                        "axios": "$t(common:modules.tools.wfsTransaction.transaction.error.genericFailedTransaction)",
+                        "baseError": "Purtroppo il salvataggio della geometria e dei suoi parametri non è riuscito.",
+                        "InvalidValue": "$t(common:modules.tools.wfsTransaction.transaction.error.baseError) Una delle voci non è valida o non è nel formato corretto.",
+                        "InvalidParameterValue": "$t(common:modules.tools.wfsTransaction.transaction.error.InvalidValue)",
+                        "MissingParameterValue": "$t(common:modules.tools.wfsTransaction.transaction.error.baseError) Uno o più parametri non hanno input e il servizio non ha un valore predefinito.",
+                        "OperationNotSupported": "$t(common:modules.tools.wfsTransaction.transaction.error.baseError) Il servizio non supporta l'operazione in corso.",
+                        "OperationParsingFailed": "$t(common:modules.tools.wfsTransaction.transaction.error.baseError) La transazione non può essere elaborata dal servizio. Contattare l'amministratore.",
+                        "OperationProcessingFailed": "$t(common:modules.tools.wfsTransaction.transaction.error.baseError) Si è verificato un errore durante la transazione."
+                    }
+                },
+                "deleteInteraction": {
+                    "confirm": "Eliminare",
+                    "headline": "Attenzione",
+                    "text": "È sicuro di voler eliminare questa geometria?"
+                },
+                "form": {
+                    "discard": "Scartare",
+                    "save": "Salvare"
+                }
+            },
+            "routing": {
+                "coordinateInputHelp": "Cercare un luogo o aggiungere un punto facendo clic sulla mappa",
+                "startpoint": "Punto di partenza",
+                "endpoint": "Destinazione",
+                "waypoint": "Punto di passaggio",
+                "addWaypoint": "Aggiungere un waypoint",
+                "moveWaypointUp": "Sposta il waypoint in alto",
+                "moveWaypointDown": "Spostare il waypoint in basso",
+                "deleteWaypoint": "Cancellare il waypoint",
+                "resetSettings": "Ripristino delle impostazioni",
+                "helpTooltip": "Guida all'apertura/chiusura",
+                "errors": {
+                    "fetchingCoordinates": "Errore durante la richiesta delle coordinate",
+                    "noRouteFound": "Purtroppo non è stato possibile trovare un percorso",
+                    "avoidAreaBig": "Le aree riservate indicate sono troppo grandi. Si prega di correggere la voce.",
+                    "errorRouteFetch": "Errore durante l'interrogazione del percorso",
+                    "errorIsochronesFetch": "Errore durante l'interrogazione della disponibilità"
+                },
+                "download": {
+                    "header": "Scaricare",
+                    "format": "Formato",
+                    "filename": "Nome del file",
+                    "filenamePlaceholder": "Specificare il nome del file",
+                    "saveResult": "Salva il risultato"
+                },
+                "tabs": {
+                    "DIRECTIONS": "Pianificazione del percorso",
+                    "ISOCHRONES": "Accessibilità"
+                },
+                "speedprofiles": {
+                    "CAR": "Auto",
+                    "HGV": "Autocarro",
+                    "CYCLING": "Bicicletta",
+                    "FOOT": "Pedoni",
+                    "WHEELCHAIR": "Sedia a rotelle"
+                },
+                "avoidOptions": {
+                    "header": "Evitare le vie del traffico",
+                    "HIGHWAYS": "Autostrada",
+                    "TOLLWAYS": "Strade a pedaggio",
+                    "FERRIES": "Traghetti",
+                    "STEPS": "Scale",
+                    "UNPAVEDROADS": "Strade sterrate",
+                    "MIXEDTRAFFIC": "Traffico misto Speed 50",
+                    "COBBLESTONE": "Ciottolo",
+                    "NARROWWAYS": "Collo di bottiglia"
+                },
+                "batchProcessing": {
+                    "header": "Elaborazione in batch",
+                    "isProcessing": "Viene eseguita l'elaborazione in batch",
+                    "cancel": "Annullamento dell'elaborazione batch",
+                    "structure": "Struttura",
+                    "example": "Esempio",
+                    "placeFile": "File qui",
+                    "uploadFile": "Caricare il file"
+                },
+                "directions": {
+                    "restrictedAreas": "Superfici di barriera",
+                    "editRestrictedAreas": "Disegnare/modificare le aree di mantenimento",
+                    "deleteRestrictedAreas": "Eliminare le aree di interdizione",
+                    "keepRoutesAfterClose": "Conserva il percorso dopo la chiusura dello strumento",
+                    "batchProcessing": {
+                        "structure": "ID;lon(punto iniziale);lat(punto iniziale);lon(punto finale);lat(punto finale)",
+                        "errorAllFailed": "Tutte le richieste sono fallite. La richiesta potrebbe essere bloccata dal servizio. Il file non contiene risultati.",
+                        "errorSomeFailed": "Non è stato possibile calcolare il {{countFailed}} Non è stato possibile calcolare correttamente i risultati. Il file dei risultati contiene celle vuote in questi punti.",
+                        "errorNoEntries": "Nessuna voce nel CSV",
+                        "errorToManyEntriesInFile": "Numero massimo di righe superato ({{limit}})",
+                        "errorToManyEntriesInRow": "La riga {{row}} contiene più di 5 voci, si prega di notare la struttura (ID;lon(punto iniziale);lat(punto iniziale);lon(punto finale);lat(punto finale))",
+                        "errorRowContainsEntriesNoNumber": "Le coordinate nella riga {{row}} non contengono numeri",
+                        "downloadHeader": {
+                            "xStart": "Valore_X_inizio",
+                            "yStart": "Valore_Y iniziale",
+                            "xEnd": "Valore_X_fine",
+                            "yEnd": "Valore_Y_fine",
+                            "time": "Tempo (min)",
+                            "distance": "Distanza (m)",
+                            "profile": "Profilo"
+                        }
+                    },
+                    "preferenceLabel": "Preferenza",
+                    "preference": {
+                        "RECOMMENDED": "Percorso consigliato",
+                        "SHORTEST": "Percorso più breve",
+                        "GREEN": "Percorso Verde"
+                    }
+                },
+                "isochrones": {
+                    "startpoint": "Punto di partenza",
+                    "optimizeHeader": "Ottimizzazione secondo",
+                    "maxDistance": "Distanza massima",
+                    "maxTraveltime": "Durata massima del viaggio",
+                    "interval": "Intervallo",
+                    "calculate": "Calcolare",
+                    "legend": "Leggenda",
+                    "batchProcessing": {
+                        "structure": "ID;lon(punto di partenza);lat(punto di partenza)",
+                        "errorAllFailed": "Tutte le richieste sono fallite. La richiesta potrebbe essere bloccata dal servizio. Il file non contiene risultati.",
+                        "errorSomeFailed": "Non è stato possibile calcolare il {{countFailed}} Non è stato possibile calcolare correttamente i risultati. Il file dei risultati contiene celle vuote in questi punti.",
+                        "errorNoEntries": "Nessuna voce nel CSV",
+                        "errorToManyEntriesInFile": "Numero massimo di righe superato ({{limit}})",
+                        "errorToManyEntriesInRow": "La riga {{row}} contiene più di 3 voci, si prega di notare la struttura (ID;lon(punto iniziale);lat(punto iniziale))",
+                        "errorRowContainsEntriesNoNumber": "Le coordinate nella riga {{row}} non contengono numeri"
+                    },
+                    "optimization": {
+                        "TIME": "Accessibilità per tempo",
+                        "DISTANCE": "Accessibilità in base alla distanza"
+                    }
+                }
+            }
+        },
+        "controls": {
+            "fullScreen": {
+                "enable": "Attiva schermo intero",
+                "disable": "Disattiva schermo intero",
+                "toggle": "Modifica schermo interno"
+            },
+            "zoom": {
+                "zoomIn": "Ingrandire",
+                "zoomOut": "Ridurre"
+            },
+            "orientation": {
+                "titleGeolocate": "Mia posizione",
+                "titleGeolocatePOI": "Vicino a me",
+                "geolocationDeniedText": "Localizzazione non disponibile",
+                "poiChoiceTitle": "Selezionare il punto di partenza per la ricerca del raggio:",
+                "poiChoiceCurrentPostion": "Posizione",
+                "poiChoiceCustomPostion": "Ricerca dell'indirizzo o del punto di riferimento nella mappa",
+                "poiChoiceConfirmation": "OK",
+                "poiChoiceStop": "Uscita",
+                "trackingDeniedText": "'Vicino a me' non disponibile",
+                "distanceUnit": "Metri",
+                "imgAlt": "Immagine per Punto di interesse"
+            },
+            "orientation3d": {
+                "compass": {
+                    "pointerNorth": "Vista nord / gira vista",
+                    "pointerSouth": "Vista sud",
+                    "pointerEast": "Vista est",
+                    "pointerWest": "Vista ovest",
+                    "moveNorth": "Spostare a nord",
+                    "moveSouth": "Spostare a sud",
+                    "moveWest": "Spostare a ovest",
+                    "moveEast": "Spostare a est"
+                },
+                "control": {
+                    "tiltDown": "Inclinazione vista",
+                    "tiltReset": "Rimetti inclinazione",
+                    "zoomIn": "$t(common:modules.controls.zoom.zoomIn)",
+                    "zoomOut": "$t(common:modules.controls.zoom.zoomOut)"
+                }
+            },
+            "totalView": {
+                "titleButton": "Rimetti vista",
+                "titleMenu": "Vista principale"
+            },
+            "3d": {
+                "buttonTitle": "3D",
+                "openView3d": "Attiva 3D",
+                "closeView3d": "Disattiva 3D",
+                "noCesium": "Non è stato possibile caricare la funzionalità Cesium/3D - Si prega di informare il fornitore del servizio"
+            },
+            "oblique": {
+                "buttonTitle": "Vista aerea obliqua",
+                "openViewOblique": "Attiva vista aerea obliqua",
+                "closeViewOblique": "Disattiva vista aerea obliqua",
+                "doNotUseIE": "La visualizzazione di immagini aeree oblique non è più supportata in Internet Explorer 11. Per questa funzione si prega di utilizzare un browser attuale."
+            },
+            "freeze": {
+                "freeze": "Blocca vista",
+                "unfreeze": "Sblocca vista",
+                "freezeTable": "$t(common:modules.controls.freeze.freeze)"
+            },
+            "backForward": {
+                "stepForward": "Prossima vista",
+                "stepBackward": "Ultima vista"
+            },
+            "attributions": {
+                "showAttributions": "Mostra le attribuzioni dei livelli",
+                "hideAttributions": "Nascondi le attribuzioni dei livelli"
+            },
+            "overviewMap": {
+                "showOverviewControl": "Mostra mappa panoramica",
+                "hideOverviewControl": "Nascondi mappa panoramica",
+                "showOverviewTable": "Mostra Mini-Map",
+                "hideOverviewTable": "Nascondi Mini-Map",
+                "missingLayerId": "Non è stato possibile creare la mappa panoramica."
+            },
+            "mousePosition": {
+                "hint": "Muovi il mouse sulla mappa",
+                "showMousePosition": "Mostra",
+                "hideMousePosition": "Nascondi"
+            }
+        },
+        "searchbar": {
+            "placeholder": {
+                "addressHospitalBplan": "Cerca indirizzo/ospedale/piano regolatore",
+                "addressTopicParcel": "Cerca indirizzo, distretto, livello, parcella catastale",
+                "addressTopic": "Ricerca indirizzo, distretto, argomenti",
+                "address": "Cerca indirizzo"
+            },
+            "locationFinder": {
+                "unknownProjection": "Risultati in un sistema di riferimento sconosciuto",
+                "serverError": "Errore del server dopo la richiesta",
+                "invalidServiceId": "Errore durante l'inizializzazione: ID servizio non valido",
+                "errorMsg": "Ricerca via LocationFinder fallita",
+                "notFound": "Servizio non disponibile"
+            },
+            "showAllResults": "mostra tutto i risultati",
+            "type": {
+                "street": "strada",
+                "district": "distretto",
+                "parcel": "parcella catastale",
+                "address": "indirizzo",
+                "location": "comune",
+                "subject": "dati specialistici",
+                "topic": "oggetto",
+                "general": "oggetto",
+                "folder": "Cartella (dati soggettivi)"
+            },
+            "specialWFS": {
+                "ongoing": "in corso",
+                "terminated": "fisso",
+                "hazardous": "Azienda pericolosa",
+                "childcare": "Asilo",
+                "bplan": "Piano regolatore",
+                "wrongGeomType": "Errore nella ricerca: Tipo di geometria non supportato. Controllare l'output della console."
+            },
+            "bkg": {
+                "errorMsg": "Servizio BKG non disponibile."
+            },
+            "gaz": {
+                "errorMsg": "Servizio Gazetteer non disponibile."
+            },
+            "osm": {
+                "errorMsg": "Servizio OpenStreetMap non disponibile."
+            },
+            "tree": {
+                "chooseObliqueLayer": "Selezionando il livello \"{{hitName}}\" si passa alla modalità <b>mappa: viste aeree oblique!</b><br>Il passaggio può richiedere un po' di tempo.<br><br>Si desidera passare alla modalità <b>mappa: viste aeree oblique</b>? <br>",
+                "choose3dLayer": "Selezionando il livello \"{{hitName}}\" si passa alla <b>Modalità mappa: 3D!</b><br>La modifica può richiedere un po' di tempo.<br><br>Si desidera passare alla <b>Modalità mappa: 3D</b>?<br>"
+            },
+            "komoot": {
+                "errorMsg": "Ricerca Komoot non disponibile."
+            },
+            "noInitialResults": "La ricerca iniziale non ha portato risultati."
+        },
+        "vectorStyle": {
+            "styleObject": {
+                "getGeometryTypeFromWFSFetchfailed": "La legenda non poteva essere creata!",
+                "getGeometryTypeFromWFSFetchfailedMessage": "Dettagli: Un servizio richiesto non risponde.",
+                "getGeometryTypeFromOAFFetchfailed": "Non è stato possibile creare la legenda nelle informazioni del livello!",
+                "getGeometryTypeFromOAFFetchfailedMessage": "Dettagli: L'API non risponde."
+            }
+        },
+        "wmsTime": {
+            "layerSwiper": {
+                "description": "Lo swiper può essere spostato con il mouse o con i tasti freccia della tastiera. Quando si utilizzano i tasti freccia, il cursore viene spostato di {{amount}}px nella direzione corrispondente.",
+                "title": "Stratificatore"
+            },
+            "timeSlider": {
+                "buttons": {
+                    "backward": "Una volta indietro",
+                    "deactivateLayerSwiper": "Rimuovere layer",
+                    "forward": "Un punto di vantaggio",
+                    "layerSwiper": "Confronta i tempi",
+                    "play": "Riproduzione automatica di tutti i punti temporali, a partire dal punto temporale attualmente selezionato"
+                },
+                "inputRangeLabel": "Selezionare un orario"
+            }
+        },
+        "legend": {
+            "name": "Legenda",
+            "linkToPdf": "Vai all legenda esterna (PDF)",
+            "noLegendForLayerInfo": "Legenda non disponibile",
+            "toggleCollapseAll": "Mostra / nascondi tutte le legende"
+        },
+        "util": {
+            "copyToClipboard": {
+                "contentSaved": "Il contenuto è stato copiato negli appunti.",
+                "contentNotSaved": "Il contenuto non è stato copiato negli appunti."
+            }
+        },
+        "exportButton": {
+            "error": {
+                "download": "Si è verificato un errore durante il download dei dati desiderati."
+            }
+        }
+    },
+    "utils": {
+        "calendar": {
+            "newYearsDay": "Capodanno",
+            "epiphany": "Epifania",
+            "goodFriday": "Venerdì Santo",
+            "easterSunday": "Domenica di Pasqua",
+            "easterMonday": "Pasquetta",
+            "laborDay": "Festa del lavoro",
+            "ascensionDay": "Ascensione",
+            "pentecostSunday": "Domenica di Pentecoste",
+            "pentecostMonday": "Lunedì bianco",
+            "corpusChristi": "Corpus Christi",
+            "peaceFestival": "Festival della pace",
+            "assumptionDay": "Giornata dell'Assunzione",
+            "germanUnityDay": "Giornata dell'Unità tedesca",
+            "reformationDay": "Giorno della Riforma",
+            "allSaintsDay": "Ognissanti",
+            "penanceDay": "Giornata di preghiera e pentimento",
+            "firstAdvent": "1. Avvento",
+            "secondAdvent": "2. Avvento",
+            "thirdAdvent": "3. Avvento",
+            "fourthAdvent": "4. Avvento",
+            "christmasEve": "Vigilia di Natale",
+            "christmasDay": "1. Giorno di Natale",
+            "secondDayOfChristmas": "2. Giorno di Natale",
+            "newYearsEve": "Silvestro"
+        },
+        "parametricURL": {
+            "alertWrongLayerIds": "Il collegamento chiamato contiene argomenti che non possono più essere trovati.</br> Per evitare di ricevere questo messaggio di errore in futuro, eseguire le seguenti operazioni:<ul> <li>Controllare la sezione della mappa desiderata per verificare che non vi siano contenuti mancanti.</li> <li>Salvare nuovamente la selezione utilizzando lo strumento \"Salva selezione\".</li></ul>",
+            "alertWrongAmountVisibility": "<strong>Chiamata parametrizzata errata!</strong></br>Le specifiche per <b>layerIds</b> non corrispondono a <b>visibilità</b> o <b>trasparenza</b>. Devono essere specificati nello stesso numero in ogni caso.",
+            "errorLoadConfig": "Non è stato possibile caricare il file di configurazione desiderato nel seguente percorso: {{url}}<br>Il parametro URL <strong>configJson</strong> richiede un file con estensione \".json\".<br>Si cerca di caricare il config.json nel percorso predefinito.",
+            "alertDeprecated": "Il parametro URL <b>?{{deprecatedKey}}</b> è deprecato e sarà rimosso con la versione 3.0.0 di Master Portal.<br>Si prega di utilizzare invece <b><a href='{{currentUrl}}'>{currentUrl}}</a></b>.",
+            "zoomTo": {
+                "wrongConfigId": "zoomTo: L'id {{configId}} specificato per il parametro url non esiste. Utilizzare 'zoomToGeometry' o 'zoomToFeatureId' nella configurazione."
+            }
+        }
+    },
+    "snippets": {
+        "checkbox": {
+            "on": "acceso",
+            "off": "spento"
+        },
+        "graphicalSelect": {
+            "displayName": "Scegliere geometria",
+            "selectBySquare": "Alza rettangolo",
+            "selectByCircle": "Alza cerchio",
+            "selectByPolygon": "Disegna area",
+            "tooltipMessage": "Clicca per avviare e arrestare",
+            "tooltipMessagePolygon": "Clicca per aggiungere un punto",
+            "alert": {
+                "notSupportedOption": "La selezione grafica contiene elementi non supportati! I modelli disponibili sono:",
+                "notSupportedSelection": "L'opzione di selezione grafica non è supportata! I modelli disponibili sono:",
+                "notSupportedElement": "L'elemento template della selezione grafica non è supportato! I modelli disponibili sono:"
+            }
+        },
+        "value": {
+            "deleteSelection": "Rimouvi selezione"
+        },
+        "slider": {
+            "date": "data",
+            "time": "ora",
+            "from": " da",
+            "to": " a",
+            "incorrectEntry": "Inserimento errato, inserire un numero intero!",
+            "outOfRangeErrorMessage": "Il valore di input deve rientrare nell'intervallo di validità {{minValueSlider}} e {{maxValueSlider}}!",
+            "valueEmptyErrorMessage": "Il valore di input non deve essere vuoto!",
+            "valueOutOfRangeErrorMessage": "Il valore di input {{inputValue}} deve essere compreso nell'intervallo di validità {{minValueSlider}} e {{maxValueSlider}}!"
+        }
+    },
+    "share-components": {
+        "list": {
+            "replace": {
+                "true": "ja",
+                "No": "no"
+            },
+            "zoomToResult": "Zoom sul risultato",
+            "zoomToResults": "Zoom sulla selezione",
+            "pagination": "Pagina dei risultati",
+            "selection": "Selezione della linea"
+        },
+        "import": {
+            "browse": "Seleziona file",
+            "dropzone": "Trascina qui il file",
+            "introInfo": "Importa il file tramite drag&drop o in alternativa tramite la finestra di dialogo del browser."
+        }
+    },
+    "libraries": {
+        "vue2-datepicker": {
+            "lang": {
+                "formatLocale": {
+                    "months": [
+                        "Gennaio",
+                        "Febbraio",
+                        "Marzo",
+                        "Aprile",
+                        "Mai",
+                        "Giugno",
+                        "Luglio",
+                        "Agosto",
+                        "Settembre",
+                        "Ottobre",
+                        "Novembre",
+                        "Dicembre"
+                    ],
+                    "monthsShort": [
+                        "Gennaio",
+                        "Febbraio",
+                        "Mar",
+                        "Apr",
+                        "Mai",
+                        "Giugno",
+                        "Luglio",
+                        "Agosto",
+                        "Settembre",
+                        "Okt",
+                        "Nov",
+                        "Dez"
+                    ],
+                    "weekdays": [
+                        "Domenica",
+                        "Lunedi",
+                        "Martedì",
+                        "Mercoledì",
+                        "Giovedì",
+                        "Venerdì",
+                        "Sabato"
+                    ],
+                    "weekdaysShort": [
+                        "dom.",
+                        "lun.",
+                        "mar.",
+                        "mer.",
+                        "gio.",
+                        "ven.",
+                        "sab."
+                    ],
+                    "weekdaysMin": [
+                        "dom.",
+                        "lun.",
+                        "mar.",
+                        "mer.",
+                        "gio.",
+                        "ven.",
+                        "sab."
+                    ],
+                    "firstDayOfWeek": 1,
+                    "firstWeekContainsDate": 4
+                }
+            }
+        }
+    }
+}

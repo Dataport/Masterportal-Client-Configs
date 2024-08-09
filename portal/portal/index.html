@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <title>{{ via(location) name }}</title> <!-- enter your own Portal Title for the website at this -->
+    <link rel="stylesheet" href="../mastercode/2_47_0/css/masterportal.css">
+    <link rel="stylesheet" href=""> <!-- Here you can configure your own fonts as url -->
+
+</head>
+<body>
+    <div id="masterportal-root"></div>
+
+    <div id="loader" class="centered-box-wrapper loader-is-loading loader-is-initially-loading">
+        <div class="centered-box-content">
+            <!-- Here you can configure the start screen -->
+            <div id="portal-logo-box">
+                <img id="portal-logo" src="" /><!-- Here an own logo can be integrated as source -->
+                <div id="portal-logo-main-title">{{ title }}</div><!-- Here you can enter your own logo text -->
+                <div id="portal-logo-sub-title">Stadt {{ via(location) name }}</div><!-- Here you can enter your own Portal Title -->
+            </div>
+            <div id="loader-spinner-itself" class="default"></div>
+        </div>
+        <div id="generic-masterportal-logo"><img src="../mastercode/2_47_0/img/Logo_Masterportal.svg"><!-- This logo should not be changed, as it is a central part of the Masterportal --></div>
+    </div>
+
+    <script type="text/javascript" src="../mastercode/2_47_0/js/masterportal.js"></script>
+</body>
+</html>

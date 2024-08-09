@@ -1,0 +1,8 @@
+[
+  {
+    "id": "11",
+    "name": "Komoot Photon Suche",
+    "url": "https://photon.komoot.io/api/?",
+    "typ": "WFS"
+  }
+]

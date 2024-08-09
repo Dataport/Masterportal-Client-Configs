@@ -1,0 +1,16 @@
+services:
+  masterportal-clientconfigs:
+    build:
+      context: ./
+      args:
+        VERSION: "v2.47.0"
+    container_name: "masterportal-clientconfigs"
+    ports:
+      - 9000:80
+    volumes:
+      - ./portal:/masterportal-clientconfigs/portal:ro
+      - ./resources:/masterportal-clientconfigs/resources:ro
+    environment:
+      KEYCLOAK_ADDRESS: "http://udp-produktisierung-49058.dsc.dataport.de:8080/realms/local"
+      VARIANT_ONLY: 0
+    restart: always
