@@ -6,16 +6,35 @@ import cookieParser from 'cookie-parser'
 import jwt from 'jsonwebtoken'
 import jwkToPem from 'jwk-to-pem'
 import { fillTemplate, fillTemplateText } from './templater.js'
+// import url and key from unversioned file
+// import dataDogApi from './dataDogApi.js'
 
+const clientConfig = JSON.parse(readFileSync(fileURLToPath(new URL('../resources/clients.json', import.meta.url)), 'utf-8'))
+const hitRates = {}
+createCombinations(clientConfig.variantLabels, clientConfig.via)
 //
 // Auxiliary functions
 //
+function createCombinations(labels, via, prefix = '') {
+    if (labels.length === 0) {
+        hitRates[prefix.slice(1)] = 0;
+        return;
+    }
+
+    const [firstLabel, ...restLabels] = labels;
+    const variants = Object.keys(via[firstLabel]);
+
+    variants.forEach(variant => {
+        createCombinations(restLabels, via, `${prefix}-${variant}`);
+    });
+}
+
 function checkPath(path) {
 	return !!path.match(/^[a-zA-Z0-9][a-zA-Z0-9-]+$/)
 }
 function genericTemplateHandler(req, res, filename, baseURL, varianted = true, mode = 'text') {
 	const template = readFileSync(fileURLToPath(new URL(filename, baseURL)), 'utf-8')
-	const clientConfig = JSON.parse(readFileSync(fileURLToPath(new URL('../resources/clients.json', import.meta.url)), 'utf-8'))
+	// const clientConfig = JSON.parse(readFileSync(fileURLToPath(new URL('../resources/clients.json', import.meta.url)), 'utf-8'))
 	const opts = {
 		role: req.auth?.client ?? 'guest',
 		roles: req.auth?.clients ?? [],
@@ -163,6 +182,9 @@ app.get('/:portal/favicon.ico', (req, res) => {
 
 // Portal file handler
 function indexHandler(req, res) {
+	if(hitRates.hasOwnProperty(req.params.variant)) {
+		hitRates[req.params.variant] += 1;
+	}
 	genericTemplateHandler(req, res, 'index.html', req.portalURL, true, 'text')
 }
 function configJsHandler(req, res) {
@@ -208,3 +230,34 @@ if(process.env.NODE_ENV === 'development') {
 		console.info('App is running at PORT: 80')
 	})
 }
+
+//
+// UNTESTED CODE
+// 
+// function sendRequestCountsToDatadog() {
+//     const data = {
+//         series: Object.keys(hitRates).map(portal => ({
+//             metric: 'portal.hit.rates',
+//             points: [[Math.floor(Date.now() / 1000), hitRates[portal]]],
+//             tags: [`portal:${portal}`]
+//         }))
+//     };
+
+//     axios.post(dataDogApi.url, data, {
+//         headers: {
+//             'Content-Type': 'application/json',
+//             'DD-API-KEY': dataDogApi.key
+//         }
+//     })
+//     .then(response => {
+//         console.log('Request counts sent to Datadog:', response.data);
+//         Object.keys(hitRates).forEach(portal => {
+//             hitRates[portal] = 0;
+//         });
+//     })
+//     .catch(error => {
+//         console.error('Error sending request counts to Datadog:', error);
+//     });
+// }
+
+// setInterval(sendRequestCountsToDatadog, 60 * 60 * 1000);
