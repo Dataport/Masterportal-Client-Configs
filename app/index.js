@@ -6,18 +6,18 @@ import cookieParser from 'cookie-parser'
 import jwt from 'jsonwebtoken'
 import jwkToPem from 'jwk-to-pem'
 import { fillTemplate, fillTemplateText } from './templater.js'
-// import url and key from unversioned file
-// import dataDogApi from './dataDogApi.js'
+import https from 'https';
 
 const clientConfig = JSON.parse(readFileSync(fileURLToPath(new URL('../resources/clients.json', import.meta.url)), 'utf-8'))
-const hitRates = {}
-createCombinations(clientConfig.variantLabels, clientConfig.via)
+const hitRatePerPortal = {}
+setHitRatePerPortal(clientConfig.variantLabels, clientConfig.via)
+console.log(hitRatePerPortal)
 //
 // Auxiliary functions
 //
-function createCombinations(labels, via, prefix = '') {
+function setHitRatePerPortal(labels, via, prefix = '') {
     if (labels.length === 0) {
-        hitRates[prefix.slice(1)] = 0;
+        hitRatePerPortal[prefix.slice(1)] = 0;
         return;
     }
 
@@ -25,7 +25,7 @@ function createCombinations(labels, via, prefix = '') {
     const variants = Object.keys(via[firstLabel]);
 
     variants.forEach(variant => {
-        createCombinations(restLabels, via, `${prefix}-${variant}`);
+        setHitRatePerPortal(restLabels, via, `${prefix}-${variant}`);
     });
 }
 
@@ -182,8 +182,8 @@ app.get('/:portal/favicon.ico', (req, res) => {
 
 // Portal file handler
 function indexHandler(req, res) {
-	if(hitRates.hasOwnProperty(req.params.variant)) {
-		hitRates[req.params.variant] += 1;
+	if(hitRatePerPortal.hasOwnProperty(req.params.variant)) {
+		hitRatePerPortal[req.params.variant] += 1;
 	}
 	genericTemplateHandler(req, res, 'index.html', req.portalURL, true, 'text')
 }
@@ -232,32 +232,52 @@ if(process.env.NODE_ENV === 'development') {
 }
 
 //
-// UNTESTED CODE
+// UNTESTED
 // 
-// function sendRequestCountsToDatadog() {
-//     const data = {
-//         series: Object.keys(hitRates).map(portal => ({
-//             metric: 'portal.hit.rates',
-//             points: [[Math.floor(Date.now() / 1000), hitRates[portal]]],
-//             tags: [`portal:${portal}`]
-//         }))
-//     };
+function sendRequestCountsToApi() {
+    const data = JSON.stringify({
+        series: Object.keys(hitRatePerPortal).map(portal => ({
+            metric: 'portal.hit.rates',
+            points: [[Math.floor(Date.now() / 1000), hitRatePerPortal[portal]]],
+            tags: [`portal:${portal}`]
+        }))
+    });
 
-//     axios.post(dataDogApi.url, data, {
-//         headers: {
-//             'Content-Type': 'application/json',
-//             'DD-API-KEY': dataDogApi.key
-//         }
-//     })
-//     .then(response => {
-//         console.log('Request counts sent to Datadog:', response.data);
-//         Object.keys(hitRates).forEach(portal => {
-//             hitRates[portal] = 0;
-//         });
-//     })
-//     .catch(error => {
-//         console.error('Error sending request counts to Datadog:', error);
-//     });
-// }
+	const apiUrl = new URL(process.env.API_URL);
 
-// setInterval(sendRequestCountsToDatadog, 60 * 60 * 1000);
+	const options = {
+        hostname: apiUrl.hostname,
+		port: '443',
+        path: apiUrl.pathname,
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Content-Length': Buffer.byteLength(data, 'utf8'),
+            'DD-API-KEY': process.env.API_KEY
+        }
+    };
+
+	const req = https.request(options, res => {
+        let responseData = '';
+
+        res.on('data', chunk => {
+            responseData += chunk;
+        });
+
+        res.on('end', () => {
+            console.log('Hit rates sent to API:', responseData);
+            Object.keys(hitRatePerPortal).forEach(portal => {
+                hitRatePerPortal[portal] = 0;
+            });
+        });
+    });
+
+    req.on('error', error => {
+        console.error('Error sending request counts to API:', error);
+    });
+
+    req.write(data);
+    req.end();
+}
+
+// setInterval(sendRequestCountsToApi, 60 * 60 * 1000);
