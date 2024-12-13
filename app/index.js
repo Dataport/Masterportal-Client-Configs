@@ -11,7 +11,6 @@ import https from 'https';
 const clientConfig = JSON.parse(readFileSync(fileURLToPath(new URL('../resources/clients.json', import.meta.url)), 'utf-8'))
 const hitRatePerPortal = {}
 setHitRatePerPortal(clientConfig.variantLabels, clientConfig.via)
-console.log(hitRatePerPortal)
 //
 // Auxiliary functions
 //
@@ -235,10 +234,23 @@ if(process.env.NODE_ENV === 'development') {
 // UNTESTED
 // 
 function sendRequestCountsToApi() {
-    const data = JSON.stringify({
+    // const data = JSON.stringify({
+    //     series: Object.keys(hitRatePerPortal).map(portal => ({
+    //         metric: 'portal.hit.rates',
+    //         points: [[Math.floor(Date.now() / 1000), hitRatePerPortal[portal]]],
+    //         tags: [`portal:${portal}`]
+    //     }))
+    // });
+
+	const data = JSON.stringify({
         series: Object.keys(hitRatePerPortal).map(portal => ({
             metric: 'portal.hit.rates',
-            points: [[Math.floor(Date.now() / 1000), hitRatePerPortal[portal]]],
+            points: [
+			{
+				timestamp: Math.floor(Date.now() / 1000), 
+				value: hitRatePerPortal[portal]
+			}
+			],
             tags: [`portal:${portal}`]
         }))
     });
@@ -280,4 +292,5 @@ function sendRequestCountsToApi() {
     req.end();
 }
 
+setInterval(sendRequestCountsToApi, 60 * 1000);
 // setInterval(sendRequestCountsToApi, 60 * 60 * 1000);
