@@ -11,12 +11,16 @@ Zum Starten der App müssen folgende Schritte durchgeführt werden
 ```
 	KEYCLOAK_ADDRESS="[URL-Keycloak]"
 	VARIANT_ONLY=0
+	API_URL="[API URL]"
+	API_KEY="[DD_API_KEY]"
 ```
 
 | Name                                 | Beschreibung                                                 				| Wert                                                              |
 | ------------------------------------ | --------------------------------------------------------------------------	| ----------------------------------------------------------------- |
 | `KEYCLOAK_ADDRESS`                   | URL des Keycloaks										      				| `"http://[domain]/realms/local"` 									|
 | `VARIANT_ONLY`   		               | Wenn auf 1 gesetzt, dann werden die Portale unter der rootURL erreichbar.	| `development`                                          			|
+| `API_URL`	   		                   | URL der Datadog API   	  | `"https://api.datadoghq.eu/api/v2/series"`  |
+| `API_KEY`                            | API Key für Datadog	  | `"[DD_API_KEY]"`     |		
 
 
 Bibliotheken installieren:
