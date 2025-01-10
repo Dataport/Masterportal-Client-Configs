@@ -230,18 +230,7 @@ if(process.env.NODE_ENV === 'development') {
 	})
 }
 
-//
-// UNTESTED
-// 
 function sendRequestCountsToApi() {
-    // const data = JSON.stringify({
-    //     series: Object.keys(hitRatePerPortal).map(portal => ({
-    //         metric: 'portal.hit.rates',
-    //         points: [[Math.floor(Date.now() / 1000), hitRatePerPortal[portal]]],
-    //         tags: [`portal:${portal}`]
-    //     }))
-    // });
-
 	const data = JSON.stringify({
         series: Object.keys(hitRatePerPortal).map(portal => ({
             metric: 'portal.hit.rates',
@@ -292,5 +281,4 @@ function sendRequestCountsToApi() {
     req.end();
 }
 
-setInterval(sendRequestCountsToApi, 60 * 1000);
-// setInterval(sendRequestCountsToApi, 60 * 60 * 1000);
+setInterval(sendRequestCountsToApi, 60 * 60 * 1000);
