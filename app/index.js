@@ -15,17 +15,17 @@ setHitRatePerPortal(clientConfig.variantLabels, clientConfig.via)
 // Auxiliary functions
 //
 function setHitRatePerPortal(labels, via, prefix = '') {
-    if (labels.length === 0) {
-        hitRatePerPortal[prefix.slice(1)] = 0;
-        return;
-    }
+	if (labels.length === 0) {
+		hitRatePerPortal[prefix.slice(1)] = 0;
+		return;
+	}
 
-    const [firstLabel, ...restLabels] = labels;
-    const variants = Object.keys(via[firstLabel]);
+	const [firstLabel, ...restLabels] = labels;
+	const variants = Object.keys(via[firstLabel]);
 
-    variants.forEach(variant => {
-        setHitRatePerPortal(restLabels, via, `${prefix}-${variant}`);
-    });
+	variants.forEach(variant => {
+		setHitRatePerPortal(restLabels, via, `${prefix}-${variant}`);
+	});
 }
 
 function checkPath(path) {
