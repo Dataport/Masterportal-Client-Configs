@@ -281,4 +281,4 @@ function sendRequestCountsToApi() {
     req.end();
 }
 
-setInterval(sendRequestCountsToApi, 60 * 60 * 1000);
+setInterval(sendRequestCountsToApi, process.env.TRANSFER_INTERVAL);
