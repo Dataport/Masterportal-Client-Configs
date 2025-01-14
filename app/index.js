@@ -249,7 +249,7 @@ function sendRequestCountsToApi() {
         headers: {
             'Content-Type': 'application/json',
             'Content-Length': Buffer.byteLength(data, 'utf8').toString(),
-            'DD-API-KEY': process.env.API_KEY
+            [process.env.API_KEY_NAME]: process.env.API_KEY
         },
         body: data
     })
@@ -265,7 +265,7 @@ function sendRequestCountsToApi() {
     });
 }
 
-if (process.env.API_URL && process.env.API_KEY) {
+if (process.env.API_KEY_NAME && process.env.API_URL && process.env.API_KEY) {
 	const interval = process.env.TRANSFER_INTERVAL || 3600000;
 	setInterval(sendRequestCountsToApi, interval);
 }
