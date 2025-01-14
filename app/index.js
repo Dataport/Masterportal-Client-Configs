@@ -33,7 +33,7 @@ function checkPath(path) {
 }
 function genericTemplateHandler(req, res, filename, baseURL, varianted = true, mode = 'text') {
 	const template = readFileSync(fileURLToPath(new URL(filename, baseURL)), 'utf-8')
-	// const clientConfig = JSON.parse(readFileSync(fileURLToPath(new URL('../resources/clients.json', import.meta.url)), 'utf-8'))
+	const clientConfig = JSON.parse(readFileSync(fileURLToPath(new URL('../resources/clients.json', import.meta.url)), 'utf-8'))
 	const opts = {
 		role: req.auth?.client ?? 'guest',
 		roles: req.auth?.clients ?? [],
