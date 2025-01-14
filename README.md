@@ -8,6 +8,7 @@ das heißt: möglichst viele Aspekte der Portalgenerierung sind konfigurierbar.
 Zum Starten der App müssen folgende Schritte durchgeführt werden
 
 .env Datei mit folgendem Inhalt anlegen:
+
 ```
 	KEYCLOAK_ADDRESS="[URL-Keycloak]"
 	VARIANT_ONLY=0
@@ -29,7 +30,7 @@ Wenn ein Tracking der Portalaufrufe mithilfe einer Monitoring Software erfolgen 
 | `API_URL`	   		                   | URL für Monitoring Software  	  | `"https://api.datadoghq.eu/api/v2/series"`  |
 | `API_KEY_NAME`	   		           | Name des http-headers für den API Key 	  | `"DD-API-KEY"` |
 | `API_KEY`                            | API Key für Monitoring API | `"[MONITORING_API_KEY]"`     |
-| `TRANSFER_INTERVAL`					| Interval, in dem die Daten an die API geschickt werden. Wenn nicht angegeben, wird es auf `3600000`gesetzt	| `3600000` 		
+| `TRANSFER_INTERVAL`					| Interval, in dem die Daten an die API geschickt werden. Wenn nicht angegeben, wird es auf `3600000` gesetzt	| `3600000` 		
 
 
 Bibliotheken installieren:
