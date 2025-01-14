@@ -244,41 +244,25 @@ function sendRequestCountsToApi() {
         }))
     });
 
-	const apiUrl = new URL(process.env.API_URL);
-
-	const options = {
-        hostname: apiUrl.hostname,
-		port: '443',
-        path: apiUrl.pathname,
+    fetch(process.env.API_URL, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Content-Length': Buffer.byteLength(data, 'utf8'),
+            'Content-Length': Buffer.byteLength(data, 'utf8').toString(),
             'DD-API-KEY': process.env.API_KEY
-        }
-    };
-
-	const req = https.request(options, res => {
-        let responseData = '';
-
-        res.on('data', chunk => {
-            responseData += chunk;
+        },
+        body: data
+    })
+    .then(response => response.text())
+    .then(responseData => {
+        console.log('Hit rates sent to API:', responseData);
+        Object.keys(hitRatePerPortal).forEach(portal => {
+            hitRatePerPortal[portal] = 0;
         });
-
-        res.on('end', () => {
-            console.log('Hit rates sent to API:', responseData);
-            Object.keys(hitRatePerPortal).forEach(portal => {
-                hitRatePerPortal[portal] = 0;
-            });
-        });
-    });
-
-    req.on('error', error => {
+    })
+    .catch(error => {
         console.error('Error sending request counts to API:', error);
     });
-
-    req.write(data);
-    req.end();
 }
 
 setInterval(sendRequestCountsToApi, process.env.TRANSFER_INTERVAL);
