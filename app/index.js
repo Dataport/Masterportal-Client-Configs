@@ -6,7 +6,6 @@ import cookieParser from 'cookie-parser'
 import jwt from 'jsonwebtoken'
 import jwkToPem from 'jwk-to-pem'
 import { fillTemplate, fillTemplateText } from './templater.js'
-import https from 'https';
 
 const clientConfig = JSON.parse(readFileSync(fileURLToPath(new URL('../resources/clients.json', import.meta.url)), 'utf-8'))
 const hitRatePerPortal = {}
