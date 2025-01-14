@@ -6,27 +6,11 @@ import cookieParser from 'cookie-parser'
 import jwt from 'jsonwebtoken'
 import jwkToPem from 'jwk-to-pem'
 import { fillTemplate, fillTemplateText } from './templater.js'
+import { initTracking, countVisit } from './tracking.js'
 
-const clientConfig = JSON.parse(readFileSync(fileURLToPath(new URL('../resources/clients.json', import.meta.url)), 'utf-8'))
-const hitRatePerPortal = {}
-setHitRatePerPortal(clientConfig.variantLabels, clientConfig.via)
 //
 // Auxiliary functions
 //
-function setHitRatePerPortal(labels, via, prefix = '') {
-	if (labels.length === 0) {
-		hitRatePerPortal[prefix.slice(1)] = 0;
-		return;
-	}
-
-	const [firstLabel, ...restLabels] = labels;
-	const variants = Object.keys(via[firstLabel]);
-
-	variants.forEach(variant => {
-		setHitRatePerPortal(restLabels, via, `${prefix}-${variant}`);
-	});
-}
-
 function checkPath(path) {
 	return !!path.match(/^[a-zA-Z0-9][a-zA-Z0-9-]+$/)
 }
@@ -178,11 +162,14 @@ app.get('/:portal/favicon.ico', (req, res) => {
 	res.redirect(308, '/favicon.ico')
 })
 
+// Set tracking via monitoring software if configured
+if (process.env.API_KEY_NAME && process.env.API_URL && process.env.API_KEY) {
+	initTracking()
+}
+
 // Portal file handler
 function indexHandler(req, res) {
-	if(hitRatePerPortal.hasOwnProperty(req.params.variant)) {
-		hitRatePerPortal[req.params.variant] += 1;
-	}
+	countVisit(req.params.variant)
 	genericTemplateHandler(req, res, 'index.html', req.portalURL, true, 'text')
 }
 function configJsHandler(req, res) {
@@ -227,44 +214,4 @@ if(process.env.NODE_ENV === 'development') {
 	app.listen(80, () => {
 		console.info('App is running at PORT: 80')
 	})
-}
-
-function sendRequestCountsToApi() {
-	const data = JSON.stringify({
-        series: Object.keys(hitRatePerPortal).map(portal => ({
-            metric: 'portal.hit.rates',
-            points: [
-			{
-				timestamp: Math.floor(Date.now() / 1000), 
-				value: hitRatePerPortal[portal]
-			}
-			],
-            tags: [`portal:${portal}`]
-        }))
-    });
-
-    fetch(process.env.API_URL, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Content-Length': Buffer.byteLength(data, 'utf8').toString(),
-            [process.env.API_KEY_NAME]: process.env.API_KEY
-        },
-        body: data
-    })
-    .then(response => response.text())
-    .then(responseData => {
-        console.log('Hit rates sent to Monitoring API', responseData);
-        Object.keys(hitRatePerPortal).forEach(portal => {
-            hitRatePerPortal[portal] = 0;
-        });
-    })
-    .catch(error => {
-        console.error('Error sending request counts to API:', error);
-    });
-}
-
-if (process.env.API_KEY_NAME && process.env.API_URL && process.env.API_KEY) {
-	const interval = process.env.TRANSFER_INTERVAL || 3600000;
-	setInterval(sendRequestCountsToApi, interval);
 }
