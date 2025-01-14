@@ -255,7 +255,7 @@ function sendRequestCountsToApi() {
     })
     .then(response => response.text())
     .then(responseData => {
-        console.log('Hit rates sent to API:', responseData);
+        console.log('Hit rates sent to Monitoring API', responseData);
         Object.keys(hitRatePerPortal).forEach(portal => {
             hitRatePerPortal[portal] = 0;
         });
@@ -265,4 +265,7 @@ function sendRequestCountsToApi() {
     });
 }
 
-setInterval(sendRequestCountsToApi, process.env.TRANSFER_INTERVAL);
+if (process.env.API_URL && process.env.API_KEY) {
+	const interval = process.env.TRANSFER_INTERVAL || 3600000;
+	setInterval(sendRequestCountsToApi, interval);
+}
