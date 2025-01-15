@@ -37,12 +37,12 @@ function sendRequestCountsToApi() {
         }))
     });
 
-    fetch(process.env.API_URL, {
+    fetch(process.env.TRACKING_API_URL, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
             'Content-Length': Buffer.byteLength(data, 'utf8').toString(),
-            [process.env.API_KEY_NAME]: process.env.API_KEY
+            [process.env.TRACKING_API_KEY_NAME]: process.env.TRACKING_API_KEY
         },
         body: data
     })
