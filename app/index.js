@@ -86,10 +86,8 @@ app.use(async (req, res, next) => {
 })
 app.use(express.static('dist'))
 
-//
-// Rewrite to portal (variant-only)
-//
-if (process.env.VARIANT_ONLY) {
+if(process.env.VARIANT_ONLY) {
+	// Rewrite to portal (variant-only)
 	app.use((req, res, next) => {
 		if(req.url.startsWith('/resources/')) {
 			next()
@@ -102,12 +100,8 @@ if (process.env.VARIANT_ONLY) {
 		req.url = `/portal${req.url}`
 		next()
 	})
-}
-
-//
-// Redirect for landing page
-//
-else {
+} else {
+	// Redirect for landing page
 	app.get('/', (req, res) => {
 		res.redirect(308, '/portal/')
 	})
@@ -205,14 +199,12 @@ app.get('/:portal/:variant/', indexHandler)
 app.get('/:portal/:variant/config.js', configJsHandler)
 app.get('/:portal/:variant/config.json', configJsonHandler)
 
-
-if (process.env.NODE_ENV === "development") {
+if(process.env.NODE_ENV === 'development') {
 	app.listen(9000, () => {
-		console.info("App is running at PORT: 9000")
+		console.info('App is running at PORT: 9000')
 	})
-}
-else {
+} else {
 	app.listen(80, () => {
-		console.info("App is running at PORT: 80")
+		console.info('App is running at PORT: 80')
 	})
 }

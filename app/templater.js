@@ -68,10 +68,10 @@ function getTemplate(s, config, opts) {
 		return getTemplate(res.groups.template, viaMap?.[viaValue] ?? viaMap?.fallback, opts)
 	}
 	if(res = checkCommand('not', s, config, opts)) return !res[0]
-	if(res = checkCommand('eq',  s, config, opts)) return res[0] === res[1]
+	if(res = checkCommand('eq', s, config, opts)) return res[0] === res[1]
 	if(res = checkCommand('neq', s, config, opts)) return res[0] !== res[1]
-	if(res = checkCommand('and', s, config, opts)) return res[0] &&  res[1]
-	if(res = checkCommand('or',  s, config, opts)) return res[0] ||  res[1]
+	if(res = checkCommand('and', s, config, opts)) return res[0] && res[1]
+	if(res = checkCommand('or', s, config, opts)) return res[0] || res[1]
 	if(res = checkCommand('elem', s, config, opts)) return Array.isArray(res[1]) && res[1].includes(res[0])
 	const path = translatePath(s)
 	return getByPath(config, path)
