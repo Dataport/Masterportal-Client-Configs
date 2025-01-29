@@ -163,7 +163,7 @@ app.get('/:portal/favicon.ico', (req, res) => {
 })
 
 // Set tracking via monitoring software if configured
-if (process.env.TRACKING_API_KEY_NAME && process.env.TRACKING_API_URL && process.env.TRACKING_API_KEY) {
+if(process.env.TRACKING_API_KEY_NAME && process.env.TRACKING_API_URL && process.env.TRACKING_API_KEY) {
 	initTracking()
 }
 
