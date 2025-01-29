@@ -62,6 +62,6 @@ export function initTracking() {
 	const clientConfig = JSON.parse(readFileSync(fileURLToPath(new URL('../resources/clients.json', import.meta.url)), 'utf-8'))
 	setHitRatePerPortal(clientConfig.variantLabels, clientConfig.via)
 
-	const interval = process.env.TRACKING_TRANSFER_INTERVAL || 3600000;
+	const interval = process.env.TRACKING_TRANSFER_INTERVAL * 1000 || 3600000;
 	setInterval(sendRequestCountsToApi, interval);
 }
