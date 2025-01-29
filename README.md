@@ -21,6 +21,7 @@ Wenn ein Tracking der Portalaufrufe mithilfe einer Monitoring Software erfolgen 
 	TRACKING_API_KEY_NAME="[HTTP-Headers name for API Key]"
 	TRACKING_API_KEY="[MONITORING_API_KEY]"
 	TRACKING_TRANSFER_INTERVAL=3600000
+	TRACKING_ENVIRONMENT="dev"
 ```
 
 | Name                                 | Beschreibung                                                 				| Wert                                                              |
@@ -30,7 +31,8 @@ Wenn ein Tracking der Portalaufrufe mithilfe einer Monitoring Software erfolgen 
 | `TRACKING_API_URL`                   | URL für Monitoring Software  	  | `"https://api.datadoghq.eu/api/v2/series"`  |
 | `TRACKING_API_KEY_NAME`	   		           | Name des http-headers für den API Key 	  | `"DD-API-KEY"` |
 | `TRACKING_API_KEY`                            | API Key für Monitoring API | `"[MONITORING_API_KEY]"`     |
-| `TRACKING_TRANSFER_INTERVAL`			| Interval, in dem die Daten an die API geschickt werden. Wenn nicht angegeben, wird es auf `3600000` gesetzt	| `3600000` 		
+| `TRACKING_TRANSFER_INTERVAL`			| Interval, in dem die Daten an die API geschickt werden. Wenn nicht angegeben, wird es auf `3600000` gesetzt	| `3600000` |
+| `TRACKING_ENVIRONMENT` | Variable um zu Tracken, aus welcher Umgebung die Daten an die API gesendet wurden. Wird als 'tag' mit an die API geschickt. | `dev` |
 
 
 Bibliotheken installieren:

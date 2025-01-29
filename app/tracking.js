@@ -33,7 +33,7 @@ function sendRequestCountsToApi() {
 				value: hitRatePerPortal[portal]
 			}
 			],
-			tags: [`portal:${portal}`]
+			tags: [`portal:${portal}`, `environment:${process.env.TRACKING_ENVIRONMENT}`]
 		}))
 	});
 
