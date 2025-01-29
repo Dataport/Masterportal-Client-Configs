@@ -263,7 +263,7 @@ Mit der obigen clients.json ergeben sich daraus die folgenden resultierenden con
 					"id": "wms-basemap-color"
 				}
 			]
-		}
+		},
 		"Fachdaten": {
 			"Layer": [
 			]
