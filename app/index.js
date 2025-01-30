@@ -6,6 +6,7 @@ import cookieParser from 'cookie-parser'
 import jwt from 'jsonwebtoken'
 import jwkToPem from 'jwk-to-pem'
 import { fillTemplate, fillTemplateText } from './templater.js'
+import { initTracking, countVisit } from './tracking.js'
 
 //
 // Auxiliary functions
@@ -161,8 +162,14 @@ app.get('/:portal/favicon.ico', (req, res) => {
 	res.redirect(308, '/favicon.ico')
 })
 
+// Set tracking via monitoring software if configured
+if(process.env.TRACKING_API_KEY_NAME && process.env.TRACKING_API_URL && process.env.TRACKING_API_KEY) {
+	initTracking()
+}
+
 // Portal file handler
 function indexHandler(req, res) {
+	countVisit(req.params.variant)
 	genericTemplateHandler(req, res, 'index.html', req.portalURL, true, 'text')
 }
 function configJsHandler(req, res) {

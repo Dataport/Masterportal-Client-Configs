@@ -8,15 +8,31 @@ das heißt: möglichst viele Aspekte der Portalgenerierung sind konfigurierbar.
 Zum Starten der App müssen folgende Schritte durchgeführt werden
 
 .env Datei mit folgendem Inhalt anlegen:
+
 ```
 	KEYCLOAK_ADDRESS="[URL-Keycloak]"
 	VARIANT_ONLY=0
+```
+
+Wenn ein Tracking der Portalaufrufe mithilfe einer Monitoring Software erfolgen soll, können folgende Parameter in der .env Datei ergänzt werden:
+
+```
+	TRACKING_API_URL="[API-URL of Monitoring Software]"
+	TRACKING_API_KEY_NAME="[HTTP-Headers name for API Key]"
+	TRACKING_API_KEY="[MONITORING_API_KEY]"
+	TRACKING_TRANSFER_INTERVAL=3600000
+	TRACKING_ENVIRONMENT="dev"
 ```
 
 | Name                                 | Beschreibung                                                 				| Wert                                                              |
 | ------------------------------------ | --------------------------------------------------------------------------	| ----------------------------------------------------------------- |
 | `KEYCLOAK_ADDRESS`                   | URL des Keycloaks										      				| `"http://[domain]/realms/local"` 									|
 | `VARIANT_ONLY`   		               | Wenn auf 1 gesetzt, dann werden die Portale unter der rootURL erreichbar.	| `development`                                          			|
+| `TRACKING_API_URL`                   | URL für Monitoring Software  	  | `"https://api.datadoghq.eu/api/v2/series"`  |
+| `TRACKING_API_KEY_NAME`	   		           | Name des http-headers für den API Key 	  | `"DD-API-KEY"` |
+| `TRACKING_API_KEY`                            | API Key für Monitoring API | `"[MONITORING_API_KEY]"`     |
+| `TRACKING_TRANSFER_INTERVAL`			| Interval, in dem die Daten an die API geschickt werden. Wenn nicht angegeben, wird es auf `3600000` gesetzt	| `3600000` |
+| `TRACKING_ENVIRONMENT` | Variable um zu Tracken, aus welcher Umgebung die Daten an die API gesendet wurden. Wird als 'tag' mit an die API geschickt. | `dev` |
 
 
 Bibliotheken installieren:
@@ -181,7 +197,7 @@ Wird in einem Objekt als Schlüssel ein String genutzt, der vollständig aus gen
 					"id": "{{ via(version) backgroundMap }}"
 				}
 			]
-		}
+		},
 		"Fachdaten": {
 			"Layer": [
 				{
@@ -247,7 +263,7 @@ Mit der obigen clients.json ergeben sich daraus die folgenden resultierenden con
 					"id": "wms-basemap-color"
 				}
 			]
-		}
+		},
 		"Fachdaten": {
 			"Layer": [
 			]
